@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Getstarted() {
-  return (
-    <div>
-      Getstarted
-    </div>
-  );
+  return <div>Getstarted now</div>;
 }
 
 export default Getstarted;
