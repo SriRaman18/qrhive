@@ -1,0 +1,34 @@
+/* @import '../../common_styles/styles.css'; */
+
+.button {
+  display: flex;
+  flex-direction: row;
+  width: 161px;
+  height: 58px;
+  padding: 19px 104px 19px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  /* background: #ffb744; */
+
+  background: var(--primary-color);
+}
+
+.btnText {
+  color: #343f52;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: SF Pro Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.btnIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}

@@ -1,11 +1,14 @@
 import "./App.css";
+
+
 import Navbar from "./components/navbar";
 import Getstarted from "./components/getstarted";
+
 function App() {
   return (
     <div className="App">
-    <Navbar />
-    <Getstarted />
+      <Navbar />
+      <Getstarted />
     </div>
   );
 }
