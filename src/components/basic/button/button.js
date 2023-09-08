@@ -1,14 +1,14 @@
-import React from 'react'
-import './button.css'
+import React from "react";
+import "./button.css";
+import { ArrowRight } from "../../../assets";
 
 const Button = ({ btnText, icon }) => {
   return (
     <div className="button">
-      <p className="btnText"> {btnText} </p>
-
-      {icon ? <img src={icon} className="btn-icon" /> : ''}
+      <p> {btnText}</p>
+      <img src={icon} alt="" />
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

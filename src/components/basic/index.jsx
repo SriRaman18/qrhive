@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Get() {
+function Basic() {
   return (
     <div>
-      Get
+      Basic
     </div>
   );
 }
 
-export default Get;
+export default Basic;

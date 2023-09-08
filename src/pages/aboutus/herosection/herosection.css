@@ -1,0 +1,40 @@
+.about-us {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.pic1 {
+  width: 698px;
+  height: 445px;
+}
+.heading {
+  color: #343f52;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 130% */
+}
+.text {
+  color: #60697b;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  width: 585px;
+}
+.about-us-pic {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-pic > * {
+  margin: 0 20px;
+}

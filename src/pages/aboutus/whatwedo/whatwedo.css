@@ -1,0 +1,45 @@
+.what-we-do {
+  width: 100vw;
+  /* width: 100vw; */
+  height: 375.001px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.what-we-do-pic {
+  width: 513.997px;
+  height: 375.001px;
+}
+
+.what-we-do-pic img {
+  width: 513.997px;
+  height: 375.001px;
+}
+.text-content {
+
+  font-family: sans-serif;
+
+  width: 616px;
+
+}
+.heading{
+    color: #343F52;
+
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 125% */
+}
+.text{
+    width: 616px;
+height: 237px;
+color: #60697B;
+text-align: justify;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px; /* 188.889% */
+}
