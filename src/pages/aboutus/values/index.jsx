@@ -6,9 +6,9 @@ import "./values.css";
 function Values() {
   return (
     <div className="values">
-      <div className="values-text">
-        <div className="title">Our values</div>
-        <p className="story-text">
+      <div className="values-texts">
+        <div className="values-title">Our values</div>
+        <p className="values-text">
           The story and values behind
           <br /> our company
         </p>

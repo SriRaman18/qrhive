@@ -7,9 +7,9 @@ function Whatwedo() {
       <div className="what-we-do-pic">
         <GroupDiscuss/>
       </div>
-      <div className="text-content">
-        <p className="heading">What we do</p>
-        <p className="text">
+      <div className="what-we-do-texts">
+        <p className="what-we-do-heading">What we do</p>
+        <p className="what-we-do-text">
           Enter the realm of QRhive, where your primary QR code generation
           requirements discover their rightful abode. In this sphere, an
           enduring dedication to simplicity, efficiency, and reliability propels

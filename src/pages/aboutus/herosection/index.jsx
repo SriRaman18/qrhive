@@ -4,9 +4,9 @@ import { PhotoOne, PhotoTwo } from "../../../assets";
 function Herosection() {
   return (
     <div className="about-us">
-      <div className="about-us-text">
-        <p className="heading">About Us</p>
-        <p className="text">
+      <div className="about-us-texts">
+        <p className="about-us-heading">About Us</p>
+        <p className="about-us-text">
           QRhive! Beyond QR codes, we're your co-pilots in shaping future
           technology, exploring innovation and possibilities together.
         </p>

@@ -1,37 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .story {
   display: flex;
   width: 579px;
-  height: 184px;
+  height: 210px;
   padding: 25px 20px;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   border-radius: 20px;
   margin: 35px 35px;
-
 }
-.first {
+.story-pic {
   height: 160px;
   width: 109px;
-  margin-right: 40px
+  margin-right: 40px;
+  display: flex;
 }
-.second {
+.story-texts {
   width: 360px;
 }
-.heading {
+.story-heading {
   color: #343f52;
   font-family: sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%; /* 24.2px */
+  padding-bottom: 25px;
 }
-.text {
+.story-text {
   color: #60697b;
 
-  font-feature-settings: "clig" off, "liga" off;
-  font-family:sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

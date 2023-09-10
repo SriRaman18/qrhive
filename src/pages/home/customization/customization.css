@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.customization {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secondary-color);
+  font-family: sans-serif;
+}
+
+.customization-texts {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.customization-texts > * {
+  margin: 10px 0;
+}
+
+.customization-heading {
+  color: #343f52;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px; /* 145.238% */
+}
+
+.customization-para-text {
+  color: #60697b;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 200% */
+}
+
+.customization-icon-texts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.customization-icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+  color: #60697b;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: 0.36px;
+}
+
+.customization-icon-text-img {
+  margin: 0 10px 0 0;
+}
+
+.customization-icon-text p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: 0.36px;
+}
+
+.customization-pic {
+  width: 446px;
+  height: 486.476px;
+}
+
+/* Media query for screens between 992px and 1199px (992px <= width < 1200px) */
+@media (max-width: 1200px) {
+}
+
+/* Media query for screens between 768px and 991px (768px <= width < 992px) */
+@media (max-width: 992px) {
+  .customization {
+    justify-content: center;
+    padding: 0 0 0 5vw;
+  }
+  .customization-heading {
+    font-size: 36px; /* Reduce heading font size */
+  }
+
+  .customization-para-text {
+    font-size: 16px; /* Reduce paragraph font size */
+    line-height: 30px; /* Adjust line height for readability */
+  }
+  .customization-icon-text p {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens between 576px and 767px (576px <= width < 768px) */
+@media (max-width: 768px) {
+  .customization {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5vw;
+  }
+  .customization-texts {
+    width: 80%;
+    align-items: center;
+  }
+
+  .customization-heading {
+    font-size: 32px; /* Further reduce heading font size */
+    width: 100%;
+    text-align: center;
+  }
+
+  .customization-para-text {
+    font-size: 18px; /* Further reduce paragraph font size */
+    line-height: 28px; /* Adjust line height for readability */
+  }
+
+  .customization-icon-text {
+    justify-content: center;
+  }
+}
+
+/* Media query for screens less than 576px (width < 576px) */
+@media (max-width: 576px) {
+  .customization-heading {
+    font-size: 28px; /* Reduce heading font size for small screens */
+  }
+
+  .customization-para-text {
+    font-size: 16px;
+  }
+
+  .customization-icon-text p {
+    font-size: 14px;
+  }
+}

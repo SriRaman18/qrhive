@@ -6,30 +6,36 @@
   align-items: center;
 }
 .our-mission-pic {
-
   width: 426.999px;
   height: 438.672px;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.text-content {
+.our-mission-texts {
   font-family: sans-serif;
   width: 616px;
 }
-.heading {
-    color: #343F52;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 50px; /* 125% */
+.our-mission-heading {
+  color: #343f52;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
 }
-.text {
-    color: #60697B;
-    text-align: justify;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34px; /* 188.889% */
+.our-mission-text {
+  color: #60697b;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 188.889% */
+}
+.our-mission>*{
+margin: 15px 0;
+
+}
+.our-mission-texts>*{
+margin: 30px 0;
+
 }

@@ -1,5 +1,8 @@
+
+
 .button {
-  background-color: #ffb744;
+  /* background-color: #ffb744; */
+  background-color: var(--primary-color);
   font-family: sans-serif;
 
   border: 1px solid;

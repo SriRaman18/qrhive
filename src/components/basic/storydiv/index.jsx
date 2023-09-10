@@ -5,12 +5,12 @@ import "./story.css";
 function Storydiv({pic, heading, text}) {
   return (
     <div className="story">
-      <div className="first">
+      <div className="story-pic">
         <img src={pic} alt="pic" />
       </div>
-      <div className="second">
-        <p className="heading">{heading}</p>
-        <p className="text">{text}</p>
+      <div className="story-texts">
+        <p className="story-heading">{heading}</p>
+        <p className="story-text">{text}</p>
       </div>
     </div>
   );
