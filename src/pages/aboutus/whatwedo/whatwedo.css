@@ -4,14 +4,15 @@
   box-sizing: border-box;
 }
 .what-we-do {
-  width: 100vw;
+  /* width: 100vw; */
   /* width: 100vw; */
   height: 375.001px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 40px;
+  margin: 100px 40px;
+ 
 }
 
 .what-we-do-pic {
@@ -46,6 +47,6 @@
   font-weight: 400;
   line-height: 34px; /* 188.889% */
 }
-.what-we-do-texts >*{
+.what-we-do-texts > * {
   margin: 20px 0;
 }

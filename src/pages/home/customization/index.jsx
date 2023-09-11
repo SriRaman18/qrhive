@@ -1,9 +1,9 @@
-import React from 'react'
-import './customization.css'
+import React from "react";
+import "./customization.css";
 
-import { CustomizeIcon, check } from '../../../assets'
+import { CustomizeIcon, Check } from "../../../assets";
 
-import Pages from '../../index'
+import Pages from "../../index";
 
 function Customization() {
   return (
@@ -18,7 +18,7 @@ function Customization() {
         <div className="customization-icon-texts">
           <div className="customization-icon-text">
             <img
-              src={check}
+              src={Check}
               alt="check-circle"
               className="customization-icon-text-img"
             />
@@ -26,7 +26,7 @@ function Customization() {
           </div>
           <div className="customization-icon-text">
             <img
-              src={check}
+              src={Check}
               alt="check-circle"
               className="customization-icon-text-img"
             />
@@ -34,7 +34,7 @@ function Customization() {
           </div>
           <div className="customization-icon-text">
             <img
-              src={check}
+              src={Check}
               alt="check-circle"
               className="customization-icon-text-img"
             />
@@ -44,7 +44,7 @@ function Customization() {
       </div>
       <CustomizeIcon className="customization-pic" />
     </div>
-  )
+  );
 }
 
-export default Customization
+export default Customization;

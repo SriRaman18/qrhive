@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .usecases-template {
+    font-family: sans-serif;
+  }
+  .usecases-template-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 140px; */
+  }
+  .usecases-template-head > * {
+    margin: 20px 0;
+  }
+  /* .usecases-template > * {
+      margin: 25px 0;
+    } */
+  .usecases-template-head-heading {
+    color: #343f52;
+    text-align: center;
+    width: 948px;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px; /* 130% */
+  }
+  .usecases-template-text {
+    color: #60697b;
+    text-align: center;
+    width: 635px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+  }
+  .usecases-template-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 60px 0;
+  }
+  .usecases-template-body-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .usecases-template-icon-text {
+    display: flex;
+    flex-direction: row;
+    width: 577px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    color: #60697b;
+    text-align: justify;
+    align-items: flex-start;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+  }
+  .usecases-template-icon-text-img {
+    margin: 5px 12px 0 0;
+  }
+  
+  .usecases-template-para-title {
+    color: #343f52;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 127.273% */
+    padding-bottom: 10px;
+  }
+  

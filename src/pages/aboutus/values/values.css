@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap");
 
 .values {
-  width: 100vw;
+  /* width: 100vw; */
   height: auto;
+  overflow-x: hidden;
+  border-right: 2px solid #000000;
 }
 .values-texts {
   display: flex;
@@ -13,7 +15,7 @@
 }
 .values-title {
   color: #ffb744;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 28px;
   display: flex;
   font-style: normal;
@@ -24,7 +26,6 @@
   align-items: center;
   border-radius: 49px;
   background: #fff3df;
-
 }
 .values-text {
   color: #343f52;

@@ -5,7 +5,7 @@ import { ArrowRight } from "../../../assets";
 const Button = ({ btnText, icon }) => {
   return (
     <div className="button">
-      <p> {btnText}</p>
+      <p className="btn-text"> {btnText}</p>
       <img src={icon} alt="" />
     </div>
   );

@@ -1,15 +1,14 @@
-
-
 .button {
-  /* background-color: #ffb744; */
   background-color: var(--primary-color);
   font-family: sans-serif;
-
+  /* padding: 25px; */
   border: 1px solid;
   border-color: transparent;
   border-radius: 50px;
   height: 58px;
-  width: 161px;
+  width: 120px;
+  min-width: 161px;
+  max-width: 190px;
   display: flex;
   font-size: 18px;
   font-weight: 500;
@@ -17,3 +16,4 @@
   justify-content: space-around;
   text-align: center;
 }
+

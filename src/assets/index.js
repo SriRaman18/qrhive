@@ -12,7 +12,23 @@ import { ReactComponent as Shopping } from './shopping-usecase.svg'
 import { ReactComponent as Travel } from './travel-usecase.svg'
 import { ReactComponent as Warranty } from './warranty-usecase.svg'
 
+import{  ReactComponent as CorporateEventsOne } from './CorporateEventsOne.svg'
+import{  ReactComponent as CorporateEventsTwo } from './CorporateEventsTwo.svg'
+import{  ReactComponent as CustomerReviews } from './CustomerReview.svg'
+import{  ReactComponent as DigitalBranding } from './DigitalBranding.svg'
+import{  ReactComponent as FmcgIndustry } from './FmcgIndustry.svg'
+import{  ReactComponent as HealthCare } from './HealthCare.svg'
+import{  ReactComponent as LogisticsIndustry } from './LogisticsIndustry.svg'
+import{  ReactComponent as OnlineSeminars } from './OnlineSeminars.svg'
+import{  ReactComponent as RestaurantsMenus } from './RestaurantsMenus.svg'
+import{  ReactComponent as ShoppingPage } from './Shopping.svg'
+import{  ReactComponent as SupplyChain } from './SupplyChain.svg'
+import{  ReactComponent as TravelTourism } from './TravelTourism.svg'
+
+
+
 import Logo from './Logo.png'
+import LogoTwo from './Logo2.png'
 import Phone from './Phone.jpg'
 import PhotoOne from './Photo1.jpg'
 import PhotoTwo from './Photo2.jpg'
@@ -21,11 +37,14 @@ import StoryOne from './Story1.png'
 import StoryTwo from './Story2.png'
 import StoryThree from './Story3.png'
 import StoryFourth from './Story4.png'
-import check from './check-circle-fill.png'
+import Check from './check-circle-fill.png'
+
+
 
 export {
   QrCode,
   Logo,
+  LogoTwo,
   Scan,
   Scanning,
   Chart,
@@ -40,11 +59,24 @@ export {
   StoryTwo,
   StoryThree,
   StoryFourth,
-  check,
+  Check,
   Review,
   Restaurant,
   Warranty,
   Travel,
   Shopping,
   Seminar,
+
+  CorporateEventsOne,
+  CorporateEventsTwo,
+  CustomerReviews,
+  DigitalBranding,
+  FmcgIndustry,
+  HealthCare,
+  LogisticsIndustry,
+  OnlineSeminars,
+  RestaurantsMenus,
+  ShoppingPage,
+  SupplyChain,
+  TravelTourism,
 }

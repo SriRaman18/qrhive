@@ -5,7 +5,7 @@
 }
 
 .get-started {
-  width: 100vw;
+  /* width: 100vw; */
   height: 420px;
   display: flex;
   flex-direction: row;
@@ -13,6 +13,8 @@
   justify-content: space-around;
   /* padding: 20px 80px; */
   background-color: #fff8ec;
+  overflow-x: hidden;
+  border-right: 2px solid #000000;
 }
 .get-started-texts {
   display: flex;
@@ -22,7 +24,7 @@
 }
 .get-started-heading {
   color: #343f52;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: sans-serif;
   width: 565px;
   font-size: 35px;

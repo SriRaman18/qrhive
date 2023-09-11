@@ -1,9 +1,19 @@
-import React from 'react';
-
+import React from "react";
+import Navbar from "../../components/basic/navbar";
+import Herosection from "./herosection";
+import Ourmission from "./ourmission";
+import Values from "./values";
+import Whatwedo from "./whatwedo";
+import Getstarted from "../../components/basic/getstarted";
 function Aboutus() {
   return (
     <div>
-      Aboutus
+      <Navbar />
+      <Herosection />
+      <Whatwedo />
+      <Ourmission />
+      <Values />
+      <Getstarted />
     </div>
   );
 }
