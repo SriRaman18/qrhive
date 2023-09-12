@@ -48,8 +48,8 @@ function App() {
 
 
 
-      {/* <Aboutus/>  */}
-      <Home />
+      <Aboutus/> 
+      {/* <Home /> */}
     </div>
   );
 }

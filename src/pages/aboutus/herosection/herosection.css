@@ -5,20 +5,19 @@
 }
 
 .about-us {
-  /* width: 100vw; */
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  padding: 50px 0 0 0;
-
+  /* padding: 10px 0 0 0; */
+  padding: 0 5vw;
+}
+.about-us-texts > * {
+  margin: 10px 0;
 }
 
-.pic1 {
-  width: 698px;
-  height: 445px;
-}
 .about-us-heading {
   color: #343f52;
   text-align: center;
@@ -27,7 +26,7 @@
   font-weight: 700;
   line-height: 65px; /* 130% */
 }
-.about-us-text {
+.about-us-para {
   color: #60697b;
   text-align: center;
   font-size: 18px;
@@ -37,15 +36,112 @@
   width: 585px;
 }
 .about-us-pic {
-  width: 100%;
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
+
+.pic1 {
+  width: 700px;
+  height: 445px;
+}
+
+.pic2 {
+  width: 300px;
+  height: 445px;
+}
+
 .about-us-pic > * {
   margin: 0 20px;
 }
-.about-us-texts > * {
-  margin: 10px 0;
+
+/* Media Query for 1200px and above */
+@media (max-width: 1200px) {
+  .about-us-heading {
+    font-size: 44px;
+  }
+
+  .pic1 {
+    width: 630px;
+    height: 400px;
+  }
+
+  .pic2 {
+    width: 270px;
+    height: 400px;
+  }
+}
+
+/* Media Query for 992px and above */
+@media (max-width: 992px) {
+  .about-us {
+    /* margin: 0vh 5vw; */
+    padding: 0;
+    /* margin: 0 3vw; */
+  }
+  .about-us-heading {
+    font-size: 38px;
+  }
+  .about-us-para {
+    font-size: 16px;
+  }
+
+  .pic1 {
+    width: 490px;
+    height: 312px;
+  }
+
+  .pic2 {
+    width: 210px;
+    height: 312px;
+  }
+}
+
+/* Media Query for 768px and above */
+@media (max-width: 768px) {
+  .about-us-heading {
+    font-size: 32px;
+  }
+
+  .about-us-para {
+    width: 535px;
+  }
+  .pic1 {
+    width: 350px;
+    height: 225px;
+  }
+
+  .pic2 {
+    width: 150px;
+    height: 225px;
+  }
+}
+
+/* Media Query for 576px and above (mobile) */
+@media (max-width: 576px) {
+  .about-us-heading {
+    font-size: 28px;
+  }
+  .about-us-para {
+    font-size: 14px;
+    width: 365px;
+  }
+
+  .about-us-pic {
+    flex-direction: column;
+  }
+  .about-us-pic > * {
+    margin: 20px 0;
+  }
+
+  /* .pic1 {
+    width: 420px;
+    height: 268px;
+  }
+
+  .pic2 {
+    width: 180px;
+    height: 268px;
+  } */
 }

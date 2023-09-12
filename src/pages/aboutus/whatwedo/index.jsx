@@ -5,11 +5,11 @@ function Whatwedo() {
   return (
     <div className="what-we-do">
       <div className="what-we-do-pic">
-        <GroupDiscuss/>
+        <GroupDiscuss className="what-we-do-svg"/>
       </div>
       <div className="what-we-do-texts">
         <p className="what-we-do-heading">What we do</p>
-        <p className="what-we-do-text">
+        <p className="what-we-do-para">
           Enter the realm of QRhive, where your primary QR code generation
           requirements discover their rightful abode. In this sphere, an
           enduring dedication to simplicity, efficiency, and reliability propels
