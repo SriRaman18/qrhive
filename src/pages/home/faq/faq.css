@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.faq {
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  /* height: 959px; */
+  background: #fff8ec;
+  padding: 20px 0;
+}
+.faq-title {
+  color: #343f52;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px; /* 152.5% */
+}
+.faq-contents {
+  margin: 10px 0;
+}

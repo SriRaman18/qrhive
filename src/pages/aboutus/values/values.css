@@ -4,7 +4,7 @@
   /* width: 100vw; */
   height: auto;
   overflow-x: hidden;
-  border-right: 2px solid #000000;
+  /* border-right: 2px solid #000000; */
 }
 .values-texts {
   display: flex;
@@ -20,8 +20,8 @@
   display: flex;
   font-style: normal;
   font-weight: 700;
-  width: 244px;
-  padding: 15px;
+  width: 204px;
+  padding: 10px 0;
   justify-content: center;
   align-items: center;
   border-radius: 49px;
@@ -31,7 +31,7 @@
   color: #343f52;
   text-align: center;
   font-family: sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   padding-top: 15px;
@@ -45,4 +45,37 @@
   flex-direction: row;
   flex-wrap: wrap;
   /* margin: 0 30px ; */
+}
+/* Media Query for 1200px and above */
+@media (max-width: 1200px) {
+}
+
+/* Media Query for 992px and above */
+@media (max-width: 992px) {
+}
+
+/* Media Query for 768px and above */
+@media (max-width: 768px) {
+  .values-title {
+    color: #ffb744;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    width: 154px;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 49px;
+    background: #fff3df;
+  }
+  .values-text {
+    font-size: 30px;
+     line-height: 35px; /* 55px */
+  }
+}
+
+/* Media Query for 576px and above (mobile) */
+@media (max-width: 576px) {
 }

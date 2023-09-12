@@ -18,8 +18,8 @@ function Getstarted() {
         <Button btnText={'Get Started'} icon={ArrowRight} />
       </div>
       <div className="get-started-figure">
-        {/* <img src={QrCode} alt="mobile"/> */}
-        <QrCode />
+        <img src={QrCode} alt="mobile"/>
+        {/* <QrCode /> */}
       </div>
     </div>
   )

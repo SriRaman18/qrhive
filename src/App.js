@@ -19,7 +19,9 @@ import Corporateevents from "./pages/usecases/corporateevents";
 import Navbar from "./components/basic/navbar";
 import Aboutus from "./pages/aboutus";
 import Footer from "./components/basic/footer";
-
+import Home from "./pages/home";
+import Faqquestion from "./components/basic/faqquestion";
+import Faq from "./pages/home/faq";
 
 function App() {
   return (
@@ -40,9 +42,14 @@ function App() {
       {/* <Usecasestemplate/> */}
       {/* <Corporateevents/> */}
       {/* <Navbar/> */}
-       {/* <Aboutus/>  */}
-        <Footer/>  
+      {/* <Footer/>   */}
+      {/* <Faqquestion /> */}
+      {/* <Faq /> */}
 
+
+
+      {/* <Aboutus/>  */}
+      <Home />
     </div>
   );
 }

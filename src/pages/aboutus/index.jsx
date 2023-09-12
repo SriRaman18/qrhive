@@ -5,6 +5,7 @@ import Ourmission from "./ourmission";
 import Values from "./values";
 import Whatwedo from "./whatwedo";
 import Getstarted from "../../components/basic/getstarted";
+import Footer from "../../components/basic/footer";
 function Aboutus() {
   return (
     <div>
@@ -14,6 +15,7 @@ function Aboutus() {
       <Ourmission />
       <Values />
       <Getstarted />
+      <Footer/>
     </div>
   );
 }
