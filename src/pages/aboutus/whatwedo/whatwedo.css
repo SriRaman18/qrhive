@@ -5,15 +5,15 @@
 }
 .what-we-do {
   /* width: 100vw; */
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 375.001px; */
   font-family: sans-serif;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   /* margin: 90px 40px; */
-  padding: 2vh 5vw;
+  padding: 3vh 5vw;
 }
 
 .what-we-do-svg {

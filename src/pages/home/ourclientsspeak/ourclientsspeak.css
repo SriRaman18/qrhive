@@ -1,0 +1,45 @@
+.our-clients-speak {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 10vh 10vw;
+  justify-content: center;
+  align-items: center;
+  /* gap: 50px; */
+}
+
+.our-clients-speak-heading {
+  color: #343f52;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 160% */
+  margin-bottom: 100px;
+}
+.our-clients-speak-container {
+  display: flex;
+  flex-direction: row;
+  /* margin: 0 100px; */
+  width: 65vw;
+  height: 400px;
+  overflow: hidden;
+}
+.circles {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: lightseagreen;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.highlight {
+  background-color: orangered;
+  transform: scale(1.1);
+}

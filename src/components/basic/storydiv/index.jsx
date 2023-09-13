@@ -6,7 +6,7 @@ function Storydiv({pic, heading, text}) {
   return (
     <div className="story">
       <div className="story-pic">
-        <img src={pic} alt="pic" />
+        <img className="story-pic"src={pic} alt="pic" />
       </div>
       <div className="story-texts">
         <p className="story-heading">{heading}</p>

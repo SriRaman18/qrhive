@@ -22,6 +22,10 @@ import Footer from "./components/basic/footer";
 import Home from "./pages/home";
 import Faqquestion from "./components/basic/faqquestion";
 import Faq from "./pages/home/faq";
+import Companynames from "./pages/home/companynames";
+import Ourclientsspeak from "./pages/home/ourclientsspeak";
+import Clientsfeedback from "./components/basic/clientsfeedback";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -45,10 +49,12 @@ function App() {
       {/* <Footer/>   */}
       {/* <Faqquestion /> */}
       {/* <Faq /> */}
+      {/* <Companynames /> */}
+      {/* <Ourclientsspeak /> */}
+      {/* <Clientsfeedback /> */}
+      <Contact />
 
-
-
-      <Aboutus/> 
+      {/* <Aboutus/>  */}
       {/* <Home /> */}
     </div>
   );

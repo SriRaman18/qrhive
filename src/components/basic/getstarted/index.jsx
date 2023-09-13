@@ -11,14 +11,14 @@ function Getstarted() {
         <p className="get-started-heading">
           Elevate Your Brand with QRhive. For any inquiries
         </p>
-        <p className="get-started-text-wrapper">
+        <p className="get-started-para">
           Join our community of QR code enthusiasts and experience the
           convenience, engagement, and innovation that await.
         </p>
         <Button btnText={'Get Started'} icon={ArrowRight} />
       </div>
       <div className="get-started-figure">
-        <img src={QrCode} alt="mobile"/>
+        <img className="get-started-svg"src={QrCode} alt="mobile"/>
         {/* <QrCode /> */}
       </div>
     </div>

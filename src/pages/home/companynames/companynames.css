@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.company-names {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  border: 0.5px solid #d2d2d2;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+  background: linear-gradient(
+    90deg,
+    #fff 36.37%,
+    rgba(255, 255, 255, 0) 115.65%
+  );
+}
+.soorya-hospital {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

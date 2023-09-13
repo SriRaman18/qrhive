@@ -1,21 +1,23 @@
 .our-mission {
   /* width: 100vw; */
   display: flex;
+  font-family: sans-serif;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 80px 40px;
+  padding: 0vh 5vw;
 }
-.our-mission-pic {
+/* .our-mission-pic {
   width: 426.999px;
   height: 438.672px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .our-mission-texts {
-  font-family: sans-serif;
-  width: 616px;
+  /* width: 616px; */
+  width: 40vw;
+
 }
 .our-mission-heading {
   color: #343f52;
@@ -24,7 +26,7 @@
   font-weight: 700;
   line-height: 50px; /* 125% */
 }
-.our-mission-text {
+.our-mission-para {
   color: #60697b;
   text-align: justify;
   font-size: 18px;
@@ -38,54 +40,72 @@
 .our-mission-texts > * {
   margin: 30px 0;
 }
+.our-mission-svg {
+  width: 426px;
+  height: 438px;
+}
 /* Media Query for 1200px and above */
 @media (max-width: 1200px) {
+  .our-mission-heading {
+    font-size: 36px;
+  }
+  .our-mission-svg {
+    width: 384px;
+  }
 }
 
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
-  .our-mission-texts {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.our-mission{
+
+  padding: 0vh 0vw;
+}
+
+ 
+  .our-mission-heading {
+    font-size: 32px;
   }
-  .our-mission {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 60px 40px;
+  .our-mission-svg {
+    width: 342px;
+  }
+  .our-mission-para {
+    font-size: 16px;
   }
 }
 
 /* Media Query for 768px and above */
 @media (max-width: 768px) {
-  .our-mission-texts {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 500px;
-
-  }
   .our-mission {
-    margin: 30px 40px;
+    flex-direction: column;
+   
+  }
+  .our-mission > * {
+    margin:  0;
+  }
+  .our-mission-texts {
+    /* width: 616px; */
+    width: 80vw;
+  
+  }
+  .our-mission-heading {
+    align-items: center;
+    font-size: 28px;
+    text-align: center;
+  }
+  .our-mission-svg {
+    width: 300px;
   }
 }
 
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
-  .our-mission-texts {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 350px;
+  .our-mission-heading {
+    font-size: 24px;
   }
-  .our-mission {
-    margin: 30px 40px;
+  .our-mission-svg {
+    width: 258px;
   }
-  .our-mission-heading{
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 50px; 
+  .our-mission-para {
+    font-size: 14px;
   }
 }

@@ -48,6 +48,11 @@ import SooryaHospital from "./SooryaHospital.png";
 import SooryaHospitalIcon from "./SooryaHospitalIcon.png";
 import PowerIndustries from "./PowerIndustries.png";
 import MvrMedicalCenter from "./MvrMedicalCenter.png";
+import FeedBackOne from "./FeedBackOne.png";
+import FeedBackTwo from "./FeedBackTwo.png";
+
+
+
 
 export {
   QrCode,
@@ -91,4 +96,13 @@ export {
   Twitter,
   FaqOne,
   FaqTwo,
+  JbHospital,
+  JmHospital,
+  SooryaHospital,
+  SooryaHospitalIcon,
+  PowerIndustries,
+  MvrMedicalCenter,
+  FeedBackOne,
+  FeedBackTwo,
+  
 };

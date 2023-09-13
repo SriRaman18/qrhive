@@ -24,12 +24,12 @@
   color: #343f52;
   font-family: sans-serif;
   width: 565px;
-  font-size: 35px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 45px; /* 128.571% */
 }
-.get-started-text-wrapper {
+.get-started-para {
   color: #60697b;
   font-family: sans-serif;
   font-size: 16px;
@@ -38,65 +38,74 @@
   line-height: 26px; /* 162.5% */
   width: 427px;
 }
+.get-started-svg {
+  width: 370px;
+  height: 375px;
+}
 
 /* Media Query for 1200px and above */
 @media (max-width: 1200px) {
+  .get-started-heading {
+    font-size: 36px;
+  }
+  .get-started-svg {
+    width: 333px;
+    height: 334px;
+  }
 }
 
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
   .get-started-heading {
-    width: 365px;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 35px;
+    font-size: 32px;
   }
 
-  .get-started-text-wrapper {
+  .get-started-para {
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px; /* 162.5% */
     width: 327px;
+  }
+  .get-started-svg {
+    width: 296px;
+    height: 297px;
   }
 }
 
 /* Media Query for 768px and above */
 @media (max-width: 768px) {
   .get-started {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
-    padding: 20px 0;
-    background-color: #fff8ec;
+    /* align-items: center; */
     gap: 40px;
   }
   .get-started-texts {
-    display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
   }
   .get-started-heading {
-    width: 365px;
+    width: 465px;
+
     font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 35px;
   }
 
-  .get-started-text-wrapper {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px; /* 162.5% */
-    width: 327px;
+  .get-started-svg {
+    width: 259px;
+    height: 260px;
   }
 }
 
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
+  .get-started-heading {
+    width: 405px;
 
+    font-size: 28px;
+  }
+
+  .get-started-para {
+    font-size: 14px;
+  }
+  .get-started-svg {
+    width: 222px;
+    height: 223px;
+  }
 }
