@@ -1,4 +1,7 @@
+import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { StoryOne } from "./assets";
 // import Navbar from "./components/basic/navbar";
 import Getstarted from "./components/basic/getstarted";
@@ -26,7 +29,10 @@ import Companynames from "./pages/home/companynames";
 import Ourclientsspeak from "./pages/home/ourclientsspeak";
 import Clientsfeedback from "./components/basic/clientsfeedback";
 import Contact from "./pages/contact";
-
+import Navbarhome from "./components/basic/navbarhome";
+import Usecase from "./components/basic/usecase";
+import Shopping from "./pages/usecases/shopping";
+import Traveltourism from "./pages/usecases/traveltourism";
 function App() {
   return (
     <div className="App">
@@ -39,7 +45,6 @@ function App() {
       {/* <Whyqrhive /> */}
       {/* <Storydiv /> */}
       {/* <Customization /> */}
-      {/* <Usecases /> */}
       {/* <Audienceinteraction/> */}
       {/* <Trackqrcodes/> */}
       {/* <Shopping/> */}
@@ -52,10 +57,23 @@ function App() {
       {/* <Companynames /> */}
       {/* <Ourclientsspeak /> */}
       {/* <Clientsfeedback /> */}
-      <Contact />
+      {/* <Contact /> */}
+      {/* <Navbarhome/> */}
+      {/* <Usecase /> */}
+      {/* <Usecases /> */}
 
       {/* <Aboutus/>  */}
       {/* <Home /> */}
+      <Router>
+      {/* <Traveltourism /> */}
+         
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<Aboutus />} />
+            <Route path="/contact-support" element={<Contact />} />
+           
+          </Routes>
+        </Router>
     </div>
   );
 }

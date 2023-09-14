@@ -3,11 +3,16 @@ import "./contact.css";
 import { Phone } from "../../assets";
 import Buttonwithouticon from "../../components/basic/buttonwithouticon";
 import { FaAngleLeft } from "react-icons/fa6";
+import Home from "../home";
+import { useNavigate } from "react-router";
+
 function Contact() {
+  const navigate = useNavigate();
+
   return (
     <div className="contact">
       <div className="contact-container">
-        <button className="contact-back-btn">
+        <button onClick={() => navigate("/")} className="contact-back-btn">
           <FaAngleLeft />
           <p>Back</p>
         </button>

@@ -1,27 +1,45 @@
+.clients-speak{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  overflow: hidden;
+}
+
 .our-clients-speak {
+  width: 1240px;
+  height: auto;
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
-  padding: 10vh 10vw;
+  padding: 50px 5px;
   justify-content: center;
-  align-items: center;
-  /* gap: 50px; */
+  /* align-items: flex-start; */
+  overflow: hidden;
+
 }
 
 .our-clients-speak-heading {
+  display: flex;
   color: #343f52;
-  font-size: 50px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 64px; /* 160% */
-  margin-bottom: 100px;
+  margin-bottom: 0px;
+  justify-content: center;
 }
 .our-clients-speak-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   /* margin: 0 100px; */
-  width: 65vw;
-  height: 400px;
+  width: 3720px;
+  /* height: 400px; */
+  /* overflow: hidden; */
+  transition: all 0.4s linear;
   overflow: hidden;
 }
 .circles {
@@ -32,14 +50,15 @@
 }
 
 .circle {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
+  border: 1px solid black;
   margin: 0px 5px;
   cursor: pointer;
 }
 .highlight {
-  background-color: orangered;
+  background-color: black;
   transform: scale(1.1);
 }

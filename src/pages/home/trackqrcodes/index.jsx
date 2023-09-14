@@ -11,7 +11,7 @@ function Trackqrcodes() {
         <div className="track-qrcodes-texts">
           <p className="track-qrcodes-heading">
             Effortlessly generate, track{" "}
-            <span className="highlight"> QR Codes</span> with ultimate ease.
+            <span className="highlight-head"> QR Codes</span> with ultimate ease.
           </p>
           <p className="track-qrcodes-text">
             Generate personalized QR codes, share them, and access statistics
@@ -19,8 +19,8 @@ function Trackqrcodes() {
           </p>
           <Button btnText={"Connect with us"} icon={ArrowRight} />
         </div>
-        <div className="track-qrcodes-pic">
-          <ChartTwo />
+        <div >
+          <ChartTwo className="track-qrcodes-pic"/>
         </div>
       </div>
     </div>

@@ -7,15 +7,24 @@ import Audienceinteraction from "./audienceinteraction";
 import Getstarted from "../../components/basic/getstarted";
 import Footer from "../../components/basic/footer";
 import Faq from "./faq";
+import Usecases from "./usecases";
+import Companynames from "./companynames";
+import Ourclientsspeak from "./ourclientsspeak";
+
+import "./home.css";
+
 function Home() {
   return (
-    <div>
+    <div className="home-page">
       {/* <Navbarhome /> */}
       <Trackqrcodes />
       <Whyqrhive />
       <Customization />
       <Audienceinteraction />
       <Faq />
+      <Usecases />
+      <Companynames />
+      <Ourclientsspeak />
       <Getstarted />
       <Footer />
     </div>

@@ -1,10 +1,14 @@
 import React from "react";
 import Usecasestemplate from "../../../components/basic/usecasestemplate";
 import usecasepagesdata from "../../../usecasepagesdata";
-
+import Usecases from "../../home/usecases";
+import Getstarted from "../../../components/basic/getstarted";
+import Footer from "../../../components/basic/footer";
+import Navbar from "../../../components/basic/navbar";
 function Traveltourism() {
   return (
     <div className="">
+      <Navbar/>
       <Usecasestemplate
         key={usecasepagesdata[4].id}
         headTitle={usecasepagesdata[4].headerTitle}
@@ -18,6 +22,9 @@ function Traveltourism() {
         pic={usecasepagesdata[4].pic}
         icon={usecasepagesdata[4].icon}
       />
+      <Usecases />
+      <Getstarted />
+      <Footer />
     </div>
   );
 }

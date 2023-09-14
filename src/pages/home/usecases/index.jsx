@@ -1,12 +1,13 @@
-import React from 'react'
-import usecasedata from '../../../usecasedata'
-import Usecase from '../../../components/basic/usecase'
+import React from "react";
+import usecasedata from "../../../usecasedata";
+import Usecase from "../../../components/basic/usecase";
+import './usecases.css'
 
 const Usecases = () => {
   return (
-    <div className="usecases-section">
-      <h2>Use cases of QRhive</h2>
-      <div className="usecases">
+    <div className="usecases" id="use-cases">
+      <p className="usecases-heading">Use cases of QRhive</p>
+      <div className="usecases-container">
         {usecasedata.map((usecase) => {
           return (
             <Usecase
@@ -14,12 +15,22 @@ const Usecases = () => {
               title={usecase.title}
               content={usecase.content}
               image={usecase.image}
+              text={usecase.text}
             />
-          )
+          );
         })}
       </div>
-    </div>
-  )
-}
+      <div className="usecases-btn">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
 
-export default Usecases
+      </div>
+    </div>
+  );
+};
+
+export default Usecases;

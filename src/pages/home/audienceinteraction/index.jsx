@@ -8,7 +8,7 @@ const Audienceinteraction = () => {
         <p className="audienceinteraction-head-heading">
           Uncover audience interactions with each QR Code.
         </p>
-        <p className="audienceinteraction-text">
+        <p className="audienceinteraction-head-para">
           Gain essential insights to identify successful codes and those needing
           adjustments.
         </p>
@@ -50,7 +50,7 @@ const Audienceinteraction = () => {
           </div>
         </div>
         <div className="audienceinteraction-pic">
-          <Chart />
+          <Chart className="audienceinteraction-pic"/>
         </div>
       </div>
     </div>

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.usecases {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 30px 140px;
+}
+.usecases-heading {
+  color: #343f52;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+}
+.usecases-container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0;
+}
+.usecases-btn button {
+  width: 44px;
+  height: 44px;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 6px 16px 0px rgba(205, 205, 205, 0.2);
+}
+.usecases-btn button:hover{
+    background: #FFB744; 
+}

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 .home {
+  border-bottom-left-radius: 300%;
+  border-bottom-right-radius: 300%;
+  background: #fff8ec;
+  border: 1px solid #fceed5;
 }
 .track-qrcodes {
   display: flex;
@@ -12,12 +16,8 @@
   font-family: sans-serif;
   justify-content: space-around;
   align-items: center;
-  padding: 0 60px;
-  background: #fff8ec;
+  padding: 0 0px;
 
-  border: 1px solid #fceed5;
-  border-bottom-left-radius: 300%;
-  border-bottom-right-radius: 300%;
   /* clip-path: circle(30% at 20% 50%); */
   /* 3128px; */
   /* clip-path: circle(77.6% at 49% 0); */
@@ -47,7 +47,7 @@
   font-weight: 400;
   line-height: 30px; /* 166.667% */
 }
-.highlight {
+.highlight-head {
   color: #ffb744;
   font-size: 50px;
 }

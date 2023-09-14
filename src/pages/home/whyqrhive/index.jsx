@@ -7,9 +7,9 @@ import Button from '../../../components/basic/button/button'
 
 function Whyqrhive() {
   return (
-    <div className="why-qrhive">
+    <div className="why-qrhive" id='why-qrhive'>
       <div className="why-qrhive-pic">
-        <Scanning />
+        <Scanning className="why-qrhive-svg"/>
       </div>
       <div className="why-qrhive-texts">
         <p className="why-qrhive-heading">Why QRhive</p>

@@ -23,7 +23,7 @@
   font-weight: 700;
   line-height: 50px; /* 125% */
 }
-.audienceinteraction-text {
+.audienceinteraction-head-para {
   color: #60697b;
   font-size: 18px;
   font-style: normal;
@@ -60,4 +60,23 @@
 .audienceinteraction-icon-text-img {
 
   margin: 5px 12px 0 0;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+/* Media Query for 992px and above */
+@media (max-width: 992px) {
+ 
+}
+
+/* Media Query for 768px and above */
+@media (max-width: 768px) {
+
+}
+
+/* Media Query for 576px and above (mobile) */
+@media (max-width: 576px) {
+
 }
