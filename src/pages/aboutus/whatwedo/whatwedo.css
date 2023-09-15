@@ -13,7 +13,7 @@
   justify-content: space-around;
   align-items: center;
   /* margin: 90px 40px; */
-  padding: 3vh 5vw;
+  padding: 10vh 5vw;
 }
 
 .what-we-do-svg {
@@ -54,6 +54,11 @@
   .what-we-do-heading {
     font-size: 36px;
   }
+  .what-we-do {
+
+    padding: 3vh 5vw;
+  }
+  
 }
 
 /* Media Query for 992px and above */

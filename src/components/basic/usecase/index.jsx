@@ -4,11 +4,17 @@ import Usecasedata from "../../../usecasedata";
 import { useNavigate } from "react-router-dom";
 // { title, content, image,text }
 // { title, content, image,text }
-const Usecase = ({ title, content, image, text,path }) => {
-  // console.log(image)
-  const routeNavigate = useNavigate()
+// import { Outlet, Link } from "react-router-dom"
+const Usecase = ({ title, content, image, text, path }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if (path) {
+      navigate(path);
+      window.scrollTo(0, 0);
+    }
+  };
   return (
-    <div className="usecase" onClick={() => routeNavigate (path) }>
+    <div className="usecase" onClick={handleClick}>
       <div className="usecase-texts">
         <p className="usecase-heading">{title}</p>
         <p className="usecase-para">{content}</p>

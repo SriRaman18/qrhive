@@ -17,7 +17,9 @@ function Navbar() {
   return (
     <div className="nav" id="#">
       <div className="logo">
-        <img src={Logo} alt="logo" />
+        <NavLink className="a-li" to="/">
+          <img src={Logo} alt="logo" />
+        </NavLink>
       </div>
       <div className="menu-btn" onClick={() => setShowSideNavbar(true)}>
         {/* <i className="fa-solid fa-bars"></i> */}

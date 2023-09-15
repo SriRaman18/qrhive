@@ -24,6 +24,8 @@ import { ReactComponent as RestaurantsMenus } from "./RestaurantsMenus.svg";
 import { ReactComponent as ShoppingPage } from "./Shopping.svg";
 import { ReactComponent as SupplyChain } from "./SupplyChain.svg";
 import { ReactComponent as TravelTourism } from "./TravelTourism.svg";
+import { ReactComponent as ShoppingUsecase} from "./Shopping-usecase.svg"
+
 
 import Logo from "./Logo.png";
 import LogoTwo from "./Logo2.png";
@@ -79,6 +81,8 @@ export {
   // Travel,
   // Shopping,
   // Seminar,
+  ShoppingUsecase,
+
   CorporateEventsOne,
   CorporateEventsTwo,
   CustomerReviews,
