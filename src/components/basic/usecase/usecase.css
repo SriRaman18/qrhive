@@ -17,8 +17,8 @@
   border-radius: 10px;
   box-shadow: 0px 6px 16px 0px rgba(205, 205, 205, 0.2);
   margin-right: 50px;
-  /* overflow: hidden; */
-
+  overflow: hidden;
+  cursor: pointer;
 }
 .usecase-texts {
   margin-top: 32%;
@@ -43,7 +43,7 @@
   position: relative;
 }
 .usecase-pic-text {
-    display: flex;
+  display: flex;
   position: absolute;
   top: 15px;
   left: 15px;
@@ -54,7 +54,7 @@
   font-weight: 600;
   justify-content: center;
   align-items: center;
-  text-align:center;
+  text-align: center;
   color: #d4917e;
   border-radius: 3px;
   background: #ffebe5;

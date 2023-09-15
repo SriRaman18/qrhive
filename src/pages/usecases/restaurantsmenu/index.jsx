@@ -2,10 +2,15 @@ import React from "react";
 
 import Usecasestemplate from "../../../components/basic/usecasestemplate";
 import usecasepagesdata from "../../../usecasepagesdata";
-
+import Usecases from "../../home/usecases";
+import Getstarted from "../../../components/basic/getstarted";
+import Footer from "../../../components/basic/footer";
+import Navbar from "../../../components/basic/navbar";
 function Restaurantsmenu() {
   return (
     <div className="">
+      <Navbar />
+
       <Usecasestemplate
         key={usecasepagesdata[1].id}
         headTitle={usecasepagesdata[1].headerTitle}
@@ -19,6 +24,9 @@ function Restaurantsmenu() {
         pic={usecasepagesdata[1].pic}
         icon={usecasepagesdata[1].icon}
       />
+      <Usecases />
+      <Getstarted />
+      <Footer />
     </div>
   );
 }

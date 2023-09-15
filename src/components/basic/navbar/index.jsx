@@ -40,14 +40,15 @@ function Navbar() {
           </div>
 
           <div className="li">
-            <a href=" " className="a-li ">
-              <NavLink to="/contact-support"> Contact&Support</NavLink>
-            </a>
+            <NavLink className="a-li" to="/contact-support">
+              {" "}
+              Contact&Support
+            </NavLink>
           </div>
           <div className="li">
-            <a href=" " className="a-li ">
-              <NavLink to="/about-us">About Us</NavLink>
-            </a>
+            <NavLink className="a-li" to="/about-us">
+              About Us
+            </NavLink>
           </div>
         </ul>
       </div>

@@ -42,6 +42,7 @@ const Usecases = () => {
                 content={usecase.content}
                 image={usecase.image}
                 text={usecase.text}
+                path={usecase.path}
               />
             )
           })}

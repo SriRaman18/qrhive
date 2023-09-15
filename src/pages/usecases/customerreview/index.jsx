@@ -1,10 +1,15 @@
 import React from "react";
 import Usecasestemplate from "../../../components/basic/usecasestemplate";
 import usecasepagesdata from "../../../usecasepagesdata";
-
+import Usecases from "../../home/usecases";
+import Getstarted from "../../../components/basic/getstarted";
+import Footer from "../../../components/basic/footer";
+import Navbar from "../../../components/basic/navbar";
 function Customerreview() {
   return (
     <div className="">
+      <Navbar />
+
       <Usecasestemplate
         key={usecasepagesdata[3].id}
         headTitle={usecasepagesdata[3].headerTitle}
@@ -18,6 +23,9 @@ function Customerreview() {
         pic={usecasepagesdata[3].pic}
         icon={usecasepagesdata[3].icon}
       />
+      <Usecases />
+      <Getstarted />
+      <Footer />
     </div>
   );
 }

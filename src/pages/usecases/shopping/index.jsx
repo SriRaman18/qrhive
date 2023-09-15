@@ -2,10 +2,15 @@ import React from "react";
 import "./shopping.css";
 import Usecasestemplate from "../../../components/basic/usecasestemplate";
 import usecasepagesdata from "../../../usecasepagesdata";
-
+import Usecases from "../../home/usecases";
+import Getstarted from "../../../components/basic/getstarted";
+import Footer from "../../../components/basic/footer";
+import Navbar from "../../../components/basic/navbar";
 function Shopping() {
   return (
     <div className="shopping">
+      <Navbar />
+
       <Usecasestemplate
         key={usecasepagesdata[0].id}
         headTitle={usecasepagesdata[0].headerTitle}
@@ -19,7 +24,9 @@ function Shopping() {
         pic={usecasepagesdata[0].pic}
         icon={usecasepagesdata[0].icon}
       />
-      
+      <Usecases />
+      <Getstarted />
+      <Footer />
     </div>
   );
 }

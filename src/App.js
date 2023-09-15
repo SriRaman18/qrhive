@@ -2,6 +2,9 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import Usecasedata from "./usecasedata";
+import routesdata from "./routesdata";
+
 import { StoryOne } from "./assets";
 // import Navbar from "./components/basic/navbar";
 import Getstarted from "./components/basic/getstarted";
@@ -18,7 +21,7 @@ import Trackqrcodes from "./pages/home/trackqrcodes";
 
 // import Shopping from './pages/usecases/shopping'
 import Usecasestemplate from "./components/basic/usecasestemplate";
-import Corporateevents from "./pages/usecases/corporateevents";
+// import Corporateevents from "./pages/usecases/corporateevents";
 import Navbar from "./components/basic/navbar";
 import Aboutus from "./pages/aboutus";
 import Footer from "./components/basic/footer";
@@ -31,8 +34,9 @@ import Clientsfeedback from "./components/basic/clientsfeedback";
 import Contact from "./pages/contact";
 import Navbarhome from "./components/basic/navbarhome";
 import Usecase from "./components/basic/usecase";
-import Shopping from "./pages/usecases/shopping";
-import Traveltourism from "./pages/usecases/traveltourism";
+// import Shopping from "./pages/usecases/shopping";
+// import Traveltourism from "./pages/usecases/traveltourism";
+
 function App() {
   return (
     <div className="App">
@@ -65,17 +69,41 @@ function App() {
       {/* <Aboutus/>  */}
       {/* <Home /> */}
       <Router>
-      {/* <Traveltourism /> */}
-         
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about-us" element={<Aboutus />} />
-            <Route path="/contact-support" element={<Contact />} />
-           
-          </Routes>
-        </Router>
+        {/* <Traveltourism /> */}
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<Aboutus />} />
+          <Route path="/contact-support" element={<Contact />} />
+
+          {routesdata.map((usecase) => {
+            return <Route key={usecase.id}path={usecase.pagename} element={usecase.element} />;
+          })}
+        </Routes>
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+{/* <Route
+    path="/corporate-events-two"
+    element={<Corporateeventstwo />}
+  /> */}
+{/* <Route path="/corporate-events" element={<Corporateevents />} />
+<Route path="/digital-branding" element={<Digitalbranding />} />
+<Route path="/fmcg-industry" element={<Fmcgindustry />} />
+<Route path="/healthcare" element={<Healthcare />} />
+<Route path="/logistics-industry" element={<Logisticsindustry />} />
+<Route path="/restaurants-menu" element={<Restaurantsmenu />} />
+<Route path="/shopping" element={<Shopping />} />
+<Route path="/supply-chain" element={<Supplychain />} />
+<Route path="/healthcare" element={<Healthcare />} /> */}

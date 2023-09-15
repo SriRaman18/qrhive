@@ -19,15 +19,14 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 60px 100px;
+  padding: 60px 60px;
   width: 65vw;
-  height: 100vh;
+  height: auto;
 }
 .contact-form-texts {
   display: flex;
   flex-direction: column;
   width: 46.5vw;
-
   gap: 30px;
 }
 .contact-form-heading {

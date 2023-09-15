@@ -1,10 +1,14 @@
 import React from "react";
 import Usecasestemplate from "../../../components/basic/usecasestemplate";
 import usecasepagesdata from "../../../usecasepagesdata";
-
+import Usecases from "../../home/usecases";
+import Getstarted from "../../../components/basic/getstarted";
+import Footer from "../../../components/basic/footer";
+import Navbar from "../../../components/basic/navbar";
 function Corporateevents() {
   return (
     <div className="">
+      <Navbar />
       <Usecasestemplate
         key={usecasepagesdata[2].id}
         headTitle={usecasepagesdata[2].headerTitle}
@@ -18,6 +22,9 @@ function Corporateevents() {
         pic={usecasepagesdata[2].pic}
         icon={usecasepagesdata[2].icon}
       />
+      <Usecases />
+      <Getstarted />
+      <Footer />
     </div>
   );
 }

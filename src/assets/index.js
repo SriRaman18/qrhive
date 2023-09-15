@@ -5,12 +5,12 @@ import { ReactComponent as Chart } from "./Chart.svg";
 import { ReactComponent as ChartTwo } from "./ChartTwo.svg";
 import { ReactComponent as GroupDiscuss } from "./GroupDiscuss.svg";
 import { ReactComponent as CustomizeIcon } from "./CustomizeIcon.svg";
-import { ReactComponent as Restaurant } from "./restaurant-usecase.svg";
-import { ReactComponent as Review } from "./review-usecase.svg";
-import { ReactComponent as Seminar } from "./seminar-usecase.svg";
-import { ReactComponent as Shopping } from "./shopping-usecase.svg";
-import { ReactComponent as Travel } from "./travel-usecase.svg";
-import { ReactComponent as Warranty } from "./warranty-usecase.svg";
+// import { ReactComponent as Restaurant } from "./restaurant-usecase.svg";
+// import { ReactComponent as Review } from "./review-usecase.svg";
+// // import { ReactComponent as Seminar } from "./seminar-usecase.svg";
+// import { ReactComponent as Shopping } from "./shopping-usecase.svg";
+// import { ReactComponent as Travel } from "./travel-usecase.svg";
+// import { ReactComponent as Warranty } from "./warranty-usecase.svg";
 
 import { ReactComponent as CorporateEventsOne } from "./CorporateEventsOne.svg";
 import { ReactComponent as CorporateEventsTwo } from "./CorporateEventsTwo.svg";
@@ -73,12 +73,12 @@ export {
   StoryThree,
   StoryFourth,
   Check,
-  Review,
-  Restaurant,
-  Warranty,
-  Travel,
-  Shopping,
-  Seminar,
+  // Review,
+  // Restaurant,
+  // Warranty,
+  // Travel,
+  // Shopping,
+  // Seminar,
   CorporateEventsOne,
   CorporateEventsTwo,
   CustomerReviews,
