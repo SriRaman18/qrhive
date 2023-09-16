@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  padding: 20px 0;
+  justify-content: space-between;
+  padding: 20px 10vw;
   background-color: #fff8ec;
 }
 .get-started-texts {
@@ -58,6 +58,7 @@
 @media (max-width: 992px) {
   .get-started-heading {
     font-size: 32px;
+    width: 485px;
   }
 
   .get-started-para {

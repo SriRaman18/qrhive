@@ -8,7 +8,7 @@ import Navbar from "../../../components/basic/navbar";
 function Healthcare() {
   return (
     <div className="">
-      <Navbar />
+      <Navbar highlightButton={"usecase"}/>
 
       <Usecasestemplate
         key={usecasepagesdata[11].id}

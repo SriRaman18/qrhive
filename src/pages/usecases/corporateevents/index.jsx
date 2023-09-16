@@ -8,7 +8,7 @@ import Navbar from "../../../components/basic/navbar";
 function Corporateevents() {
   return (
     <div className="">
-      <Navbar />
+      <Navbar highlightButton={"usecase"} />
       <Usecasestemplate
         key={usecasepagesdata[2].id}
         headTitle={usecasepagesdata[2].headerTitle}

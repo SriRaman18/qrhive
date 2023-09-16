@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 .audienceinteraction {
+  width: 100vw;
   font-family: sans-serif;
+  /* padding: 0px 5vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .audienceinteraction-head {
   display: flex;
@@ -12,6 +17,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 80px;
+  width: 100%;
 }
 .audienceinteraction-head > * {
   margin: 10px 0;
@@ -22,6 +28,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 50px; /* 125% */
+  text-align: center;
 }
 .audienceinteraction-head-para {
   color: #60697b;
@@ -33,10 +40,13 @@
 .audienceinteraction-body {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: 0 0px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10vw;
+  /* padding: 0 2vw; */
 }
 .audienceinteraction-body-texts {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +55,7 @@
 .audienceinteraction-icon-text {
   display: flex;
   flex-direction: row;
-  width: 577px;
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
   margin: 10px 0;
@@ -58,25 +68,74 @@
   line-height: 30px; /* 150% */
 }
 .audienceinteraction-icon-text-img {
-
   margin: 5px 12px 0 0;
 }
 
-@media (max-width: 1200px) {
+.audience-interaction-svg {
+  width: 50%;
+  margin-left: 10vw;
+}
 
+@media (max-width: 1200px) {
 }
 
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
- 
+  .audienceinteraction-head-heading {
+    font-size: 36px;
+  }
+
+  .audienceinteraction-head-para {
+    width: 80%;
+    text-align: center;
+  }
+
+  .audienceinteraction-body {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .audienceinteraction-body-texts {
+    width: 80%;
+  }
+
+  .audienceinteraction-icon-text {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .audience-interaction-svg {
+    width: 80%;
+    margin-left: 0;
+  }
 }
 
 /* Media Query for 768px and above */
 @media (max-width: 768px) {
-
+  .audienceinteraction-head-heading {
+    font-size: 32px;
+    line-height: 40px; /* 125% */
+  }
 }
 
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
+  .audienceinteraction-head {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .audienceinteraction-head-heading {
+    font-size: 28px;
+  }
 
+  .audienceinteraction-body-texts {
+    width: 100%;
+  }
+  .audienceinteraction-icon-text {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .audience-interaction-svg {
+    width: 130%;
+  }
 }

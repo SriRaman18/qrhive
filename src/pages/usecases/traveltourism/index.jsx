@@ -8,7 +8,7 @@ import Navbar from "../../../components/basic/navbar";
 function Traveltourism() {
   return (
     <div className="">
-      <Navbar/>
+      <Navbar highlightButton={"usecase"}/>
       <Usecasestemplate
         key={usecasepagesdata[4].id}
         headTitle={usecasepagesdata[4].headerTitle}

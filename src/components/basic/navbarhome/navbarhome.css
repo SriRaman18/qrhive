@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 50px;
+  padding: 30px 10vw;
   justify-content: space-between;
   background: #fff8ec;
   align-items: center;
@@ -107,6 +107,10 @@
 /* Media Query for 1200px and above */
 
 @media (max-width: 1200px) {
+  .nav-bar {
+    padding: 30px 5vw;
+
+  }
 }
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
@@ -120,13 +124,13 @@
 /* Media Query for 768px and above */
 
 @media screen and (max-width: 760px) {
-  .nav-bar  {
+  .nav-bar {
     width: 100vw;
-    /* padding: 0 40px 0 20px; */
+    padding: 0 40px 0 20px;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .menu-btn {
     display: flex;
     /* color: red; */
@@ -146,7 +150,7 @@
     border-left: 1px solid gray;
     transform: translateX(200%);
   }
-  
+
   .sub-menu.show {
     transform: translateX(0);
   }

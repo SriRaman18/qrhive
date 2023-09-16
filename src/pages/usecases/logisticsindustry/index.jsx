@@ -8,7 +8,7 @@ import Navbar from "../../../components/basic/navbar";
 function Logisticsindustry() {
   return (
     <div className="">
-      <Navbar />
+      <Navbar highlightButton={"usecase"}/>
 
       <Usecasestemplate
         key={usecasepagesdata[8].id}

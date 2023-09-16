@@ -11,7 +11,7 @@ function Contact() {
 
   return (
     <div className="contact">
-      <div className="contact-container">
+      <div className="contact-pic-container">
         <button onClick={() => navigate("/")} className="contact-back-btn">
           <FaAngleLeft />
           <p>Back</p>
@@ -27,21 +27,34 @@ function Contact() {
           </p>
         </div>
         <div className="contact-form-inputs">
-          <div className="input-container">
-            <label htmlFor="first-name">First Name*</label>
-            <input type="text" id="first-name" />
+          <div className="contact-form-inputs-first-div">
+            <div className="input-container">
+              <label htmlFor="first-name" className="input-label">
+                First Name*
+              </label>
+              <input type="text" id="first-name" />
+            </div>
+            <div className="input-container">
+              <label htmlFor="last-name" className="input-label">
+                Last Name*
+              </label>
+              <input type="text" id="last-name" />
+            </div>
           </div>
-          <div className="input-container">
-            <label htmlFor="last-name">Last Name*</label>
-            <input type="text" id="last-name" />
-          </div>
-          <div className="input-container">
-            <label htmlFor="email"> Email*</label>
-            <input type="email" id="email" />
-          </div>
-          <div className="input-container">
-            <label htmlFor="organisation-name">Organisation Name*</label>
-            <input type="text" id="organisation-name" />
+          <div className="contact-form-inputs-second-div">
+            <div className="input-container">
+              <label htmlFor="email" className="input-label">
+                {" "}
+                Email*
+              </label>
+              <input type="email" id="email" />
+            </div>
+            <div className="input-container">
+              <label htmlFor="organisation-name" className="input-label">
+                Organisation Name*
+              </label>
+              <input type="text" id="organisation-name" />
+            </div>
           </div>
           <div className="input-container input-container-full">
             <input
@@ -53,10 +66,10 @@ function Contact() {
         </div>
         <div className="check-box-inputs">
           <div className="check-box-container">
-            <label class="form-control">
+            <label class="check-box-label">
               <input
                 type="checkbox"
-                className="check-box "
+                className="check-box"
                 checked
                 name="checkbox"
               />
@@ -65,9 +78,10 @@ function Contact() {
             </label>
           </div>
           <div className="check-box-container">
-            <label class="form-control">
-              <input type="checkbox" name="checkbox" />I would like to receive
-              details about products, services and events from QRhive.
+            <label class="check-box-label">
+              <input type="checkbox" name="checkbox" className="check-box" />I
+              would like to receive details about products, services and events
+              from QRhive.
             </label>
           </div>
         </div>

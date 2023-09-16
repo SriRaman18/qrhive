@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 import "./navbar.css";
 
-function Navbar() {
+function Navbar({ highlightButton }) {
   const navigate = useNavigate();
 
   const [showSideNavbar, setShowSideNavbar] = useState(false);
@@ -18,12 +18,10 @@ function Navbar() {
     <div className="nav" id="#">
       <div className="logo">
         <NavLink className="a-li" to="/">
-          <img src={Logo} alt="logo" />
+          <Logo />
         </NavLink>
       </div>
       <div className="menu-btn" onClick={() => setShowSideNavbar(true)}>
-        {/* <i className="fa-solid fa-bars"></i> */}
-
         <GiHamburgerMenu className="menu" />
       </div>
       <div className={showSideNavbar ? "sub-menu show" : "sub-menu"}>
@@ -32,25 +30,32 @@ function Navbar() {
         </div>
         <ul className="ul">
           <div className="li">
-            <Buttonwithouticon btnText={"Why Us"} />
+            <NavLink className="a-li" to="/">
+              Why Us
+            </NavLink>
           </div>
-
           <div className="li">
-            <a href=" " className="a-li ">
-              Use cases
-            </a>
+            {highlightButton == "usecase" ? (
+              <Buttonwithouticon btnText={"Use Case"} />
+            ) : (
+              <NavLink className="a-li" to="/shopping">
+                Use Cases
+              </NavLink>
+            )}
           </div>
-
           <div className="li">
             <NavLink className="a-li" to="/contact-support">
-              {" "}
               Contact&Support
             </NavLink>
           </div>
           <div className="li">
-            <NavLink className="a-li" to="/about-us">
-              About Us
-            </NavLink>
+            {highlightButton == "aboutUs" ? (
+              <Buttonwithouticon btnText={"About Us"} />
+            ) : (
+              <NavLink className="a-li" to="/about-us">
+                About Us
+              </NavLink>
+            )}
           </div>
         </ul>
       </div>

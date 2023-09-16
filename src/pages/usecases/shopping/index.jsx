@@ -9,7 +9,7 @@ import Navbar from "../../../components/basic/navbar";
 function Shopping() {
   return (
     <div className="shopping">
-      <Navbar />
+      <Navbar highlightButton={"usecase"}/>
 
       <Usecasestemplate
         key={usecasepagesdata[0].id}

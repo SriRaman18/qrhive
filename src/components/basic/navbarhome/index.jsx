@@ -12,11 +12,9 @@ function Navbarhome() {
   return (
     <div className="nav-bar" id="#">
       <div className="logo">
-        <img src={Logo} alt="logo" />
+        <Logo />
       </div>
       <div className="menu-btn" onClick={() => setShowSideNavbar(true)}>
-        {/* <i className="fa-solid fa-bars"></i> */}
-
         <GiHamburgerMenu className="menu" />
       </div>
       <div className={showSideNavbar ? "sub-menu show" : "sub-menu"}>

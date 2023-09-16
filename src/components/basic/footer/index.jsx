@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer">
       <div className="footer-body">
         <div className="footer-texts">
-          <img src={LogoTwo} alt="" />
+         <LogoTwo/>
           <p className="footer-text">
             Generate custom QR codes with QRhive. Add your URLs to create faster
             links for customers to access your website and social media. Improve

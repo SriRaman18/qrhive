@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import Usecasestemplate from "../../../components/basic/usecasestemplate";
 import usecasepagesdata from "../../../usecasepagesdata";
 import Usecases from "../../home/usecases";
 import Getstarted from "../../../components/basic/getstarted";
 import Footer from "../../../components/basic/footer";
 import Navbar from "../../../components/basic/navbar";
-function Corporateeventstwo() {
+function Warrantyregistration() {
   return (
     <div className="">
-            <Navbar/>
+      <Navbar />
 
       <Usecasestemplate
         key={usecasepagesdata[7].id}
@@ -23,11 +23,11 @@ function Corporateeventstwo() {
         pic={usecasepagesdata[7].pic}
         icon={usecasepagesdata[7].icon}
       />
-        <Usecases />
+      <Usecases />
       <Getstarted />
       <Footer />
     </div>
   );
 }
 
-export default Corporateeventstwo;
+export default Warrantyregistration;

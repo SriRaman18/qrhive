@@ -8,7 +8,7 @@ import Navbar from "../../../components/basic/navbar";
 function Digitalbranding() {
   return (
     <div className="">
-      <Navbar />
+      <Navbar highlightButton={"usecase"}/>
 
       <Usecasestemplate
         key={usecasepagesdata[6].id}

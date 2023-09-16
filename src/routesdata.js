@@ -1,4 +1,4 @@
-import Corporateeventstwo from "./pages/usecases/corporateeventstwo";
+import Warrantyregistration from "./pages/usecases/warrantyregistration";
 import Corporateevents from "./pages/usecases/corporateevents";
 import Customerreview from "./pages/usecases/customerreview";
 import Digitalbranding from "./pages/usecases/digitalbranding";
@@ -50,8 +50,8 @@ const routesdata = [
   },
   {
     id:8 ,
-    pagename: "/Corporate-events-two",
-    element: <Corporateeventstwo />,
+    pagename: "/Warranty-registration",
+    element: <Warrantyregistration />,
   },
   {
     id:9,

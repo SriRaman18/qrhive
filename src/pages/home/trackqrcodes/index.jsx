@@ -17,7 +17,7 @@ function Trackqrcodes() {
             Generate personalized QR codes, share them, and access statistics
             instantly on QRhive.
           </p>
-          <Button btnText={"Connect with us"} icon={ArrowRight} />
+          <Button btnText={"Connect with us"}  />
         </div>
         <div >
           <ChartTwo className="track-qrcodes-pic"/>

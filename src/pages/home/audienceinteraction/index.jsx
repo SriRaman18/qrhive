@@ -49,9 +49,9 @@ const Audienceinteraction = () => {
             </p>
           </div>
         </div>
-        <div className="audienceinteraction-pic">
-          <Chart className="audienceinteraction-pic"/>
-        </div>
+        {/* <div className="audience-interaction-pic"> */}
+        <Chart className="audience-interaction-svg" />
+        {/* </div> */}
       </div>
     </div>
   );

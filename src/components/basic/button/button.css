@@ -16,4 +16,9 @@
   justify-content: space-around;
   text-align: center;
 }
+.right-circle{
+  width: 20px;
+  height: 20px;
+  /* color: white; */
+}
 

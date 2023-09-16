@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import usecasedata from "../../../usecasedata";
 import Usecase from "../../../components/basic/usecase";
 import "./usecases.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Usecases = () => {
   const [index, setIndex] = useState(0);
 

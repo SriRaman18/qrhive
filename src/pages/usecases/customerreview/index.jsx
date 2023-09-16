@@ -8,7 +8,7 @@ import Navbar from "../../../components/basic/navbar";
 function Customerreview() {
   return (
     <div className="">
-      <Navbar />
+      <Navbar highlightButton={"usecases"}/>
 
       <Usecasestemplate
         key={usecasepagesdata[3].id}

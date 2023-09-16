@@ -9,13 +9,13 @@ import Footer from "../../components/basic/footer";
 function Aboutus() {
   return (
     <div>
-      <Navbar />
+      <Navbar highlightButton={"aboutUs"} />
       <Herosection />
       <Whatwedo />
       <Ourmission />
       <Values />
       <Getstarted />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

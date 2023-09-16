@@ -1,8 +1,8 @@
 import React from "react";
 import {
   Check,
-  CorporateEventsOne,
-  CorporateEventsTwo,
+  CorporateEvents,
+  WarrantyRegistration,
   CustomerReviews,
   DigitalBranding,
   FmcgIndustry,
@@ -68,7 +68,7 @@ const usecasepagesdata = [
     bodyTextThree:
       "Monitor engagement and amass significant attendee insights using QR codes, aiding in refining forthcoming event planning and strategies.",
     icon: Check,
-    pic: <CorporateEventsOne />,
+    pic: <CorporateEvents />,
   },
   {
     id: 4,
@@ -159,7 +159,7 @@ const usecasepagesdata = [
     bodyTextThree:
       "Choose from diverse content options with QR Codes. For text, use Text QR Code; for web links, opt for Website URL QR Code; and for images, create an Image QR Code.",
     icon: Check,
-    pic: <CorporateEventsTwo />,
+    pic:  <WarrantyRegistration/>,
   },
   {
     id: 9,

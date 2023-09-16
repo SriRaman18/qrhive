@@ -8,7 +8,7 @@ import Navbar from "../../../components/basic/navbar";
 function Fmcgindustry() {
   return (
     <div className="">
-      <Navbar />
+      <Navbar highlightButton={"usecase"}/>
 
       <Usecasestemplate
         key={usecasepagesdata[9].id}

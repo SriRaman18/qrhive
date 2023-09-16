@@ -9,7 +9,7 @@ import Navbar from "../../../components/basic/navbar";
 function Supplychain() {
   return (
     <div className="">
-      <Navbar />
+      <Navbar highlightButton={"usecase"}/>
 
       <Usecasestemplate
         key={usecasepagesdata[10].id}

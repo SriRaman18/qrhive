@@ -83,7 +83,7 @@ const Usecasedata = [
     image: <ShoppingUsecase />,
 
     text: "Warranty Registration",
-    path: "/corporate-events",
+    path: "/warranty-registration",
   },
   {
     id: 9,
