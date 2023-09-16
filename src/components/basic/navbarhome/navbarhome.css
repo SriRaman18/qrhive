@@ -109,7 +109,6 @@
 @media (max-width: 1200px) {
   .nav-bar {
     padding: 30px 5vw;
-
   }
 }
 /* Media Query for 992px and above */
@@ -148,11 +147,11 @@
     background-color: #fff8ec;
     color: black;
     border-left: 1px solid gray;
-    transform: translateX(200%);
+    transform: translateX(0%);
   }
 
   .sub-menu.show {
-    transform: translateX(0);
+    transform: translateX(-200%);
   }
 
   .close-btn {
