@@ -155,11 +155,11 @@
     height: 100vh;
     background-color: #fff8ec;
     color: black;
-    transform: translateX(0);
+    transform: translateX(50vw);
   }
 
   .sub-menu.show {
-    transform: translateX(-200%);
+    transform: translateX(0);
   }
 
   .close-btn {
