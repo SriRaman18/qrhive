@@ -86,10 +86,7 @@
   font-weight: 600;
   line-height: 20px;
 }
-.toggle-btn {
-  transition: all 0.2s linear;
-  cursor: pointer;
-}
+
 .menu {
   width: 30px;
   height: 30px;
@@ -132,14 +129,11 @@
 
   .menu-btn {
     display: flex;
-    /* color: red; */
-    /* z-index: 102; */
-    /* margin: 0 100px; */
   }
   .sub-menu {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 50vw;
@@ -147,18 +141,18 @@
     background-color: #fff8ec;
     color: black;
     border-left: 1px solid gray;
-    transform: translateX(0%);
+    transform: translateX(50vw);
   }
 
   .sub-menu.show {
-    transform: translateX(-200%);
+    transform: translateX(0);
   }
 
   .close-btn {
     display: flex;
     position: fixed;
     right: 10%;
-    top: 5%;
+    top: 3%;
     font-size: 30px;
     cursor: pointer;
   }

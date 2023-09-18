@@ -1,5 +1,5 @@
-import React from "react";
-import "./usecasestemplate.css";
+import React from 'react'
+import './usecasestemplate.css'
 
 function Usecasestemplate({
   headText,
@@ -11,8 +11,9 @@ function Usecasestemplate({
   bodyTextTwo,
   bodyTextThree,
   pic,
-  icon
+  icon,
 }) {
+  console.log('headText', pic)
   return (
     <div className="usecases-template">
       <div className="usecases-template-head">
@@ -56,10 +57,11 @@ function Usecasestemplate({
             </div>
           </div>
         </div>
-        <div className="usecases-template-pic">{pic}</div>
+        {pic}
+
       </div>
     </div>
-  );
+  )
 }
 
-export default Usecasestemplate;
+export default Usecasestemplate

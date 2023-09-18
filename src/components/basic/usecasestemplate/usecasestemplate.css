@@ -1,79 +1,267 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .usecases-template {
-    font-family: sans-serif;
-  }
-  .usecases-template-head {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* margin-top: 140px; */
-  }
-  .usecases-template-head > * {
-    margin: 20px 0;
-  }
-  /* .usecases-template > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.usecases-template {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-family: sans-serif;
+}
+.usecases-template-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 140px; */
+}
+.usecases-template-head > * {
+  margin: 20px 0;
+}
+/* .usecases-template > * {
       margin: 25px 0;
     } */
+.usecases-template-head-heading {
+  color: #343f52;
+  text-align: center;
+  width: 948px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px; /* 130% */
+}
+.usecases-template-text {
+  color: #60697b;
+  text-align: center;
+  width: 635px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.usecases-template-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding: 0 10vw; */
+  margin: 60px 0;
+}
+.usecases-template-body-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.usecases-template-icon-text {
+  display: flex;
+  flex-direction: row;
+  width: 577px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+  color: #60697b;
+  text-align: justify;
+  align-items: flex-start;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+.usecases-template-icon-text-img {
+  margin: 5px 12px 0 0;
+}
+
+.usecases-template-para-title {
+  color: #343f52;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 127.273% */
+  padding-bottom: 10px;
+}
+
+.usecases-template-body svg {
+  width: 745px;
+  height: 417.675px;
+}
+
+@media (max-width: 1400px) {
   .usecases-template-head-heading {
-    color: #343f52;
-    text-align: center;
-    width: 948px;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 65px; /* 130% */
+    font-size: 45px;
   }
   .usecases-template-text {
-    color: #60697b;
-    text-align: center;
-    width: 635px;
+    width: 655px;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 166.667% */
   }
+  .usecases-template-body svg {
+    width: 670px;
+    height: 370px;
+  }
+  .usecases-template-icon-text {
+    width: 507px;
+
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
   .usecases-template-body {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 60px 0;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+  .usecases-template-head-heading {
+    font-size: 45px;
+    width: 748px;
+  }
+  .usecases-template-text {
+    width: 635px;
+    font-size: 18px;
   }
   .usecases-template-body-texts {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .usecases-template-body svg {
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 280px;
+  }
+  .usecases-template-para-title {
+    width: 507px;
+
+    font-size: 20px;
+  }
+  .usecases-template-para-text {
+    font-size: 18px;
+    width: 500px;
+  }
+}
+
+/* Media Query for 992px and above */
+@media (max-width: 992px) {
+  .usecases-template-head-heading {
+    font-size: 40px;
+    width: 708px;
+    line-height: 40px;
+  }
+  .usecases-template-text {
+    width: 435px;
+    font-size: 18px;
+  }
+
+  .usecases-template-body {
+    align-items: center;
+  }
+  .usecases-template-body-texts {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .usecases-template-body-texts {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .usecases-template-icon-text {
     display: flex;
-    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+  }
+
+  .usecases-template-para-title {
+    width: 307px;
+
+    font-size: 20px;
+  }
+  .usecases-template-para-text {
+    font-size: 18px;
+    width: 100%;
+  }
+  .usecases-template-body svg {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Media Query for 768px and above */
+@media (max-width: 768px) {
+  .usecases-template {
     align-items: center;
     justify-content: center;
   }
-  .usecases-template-icon-text {
-    display: flex;
-    flex-direction: row;
-    width: 577px;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 10px 0;
-    color: #60697b;
-    text-align: justify;
-    align-items: flex-start;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 150% */
+  .usecases-template-body {
+    width: 80%;
   }
-  .usecases-template-icon-text-img {
-    margin: 5px 12px 0 0;
+  .usecases-template-head {
+    width: 90%;
   }
-  
+
+  .usecases-template-head-heading {
+    font-size: 35px;
+    width: 100%;
+    line-height: 30px;
+  }
+  .usecases-template-text {
+    /* width: 375px; */
+    font-size: 18px;
+    width: 100%;
+  }
+
   .usecases-template-para-title {
-    color: #343f52;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 127.273% */
-    padding-bottom: 10px;
+    width: 307px;
+
+    font-size: 20px;
   }
-  
+  .usecases-template-para-text {
+    font-size: 18px;
+    width: 500px;
+  }
+}
+
+/* Media Query for 576px and above (mobile) */
+@media (max-width: 576px) {
+  .usecases-template-head-heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .usecases-template-body {
+    width: 80vw;
+  }
+
+  .usecases-template-body-texts {
+    width: 100%;
+  }
+
+  .usecases-template-icon-text {
+    width: 100%;
+  }
+
+  .usecases-template-text {
+    font-size: 18px;
+  }
+
+  .para {
+    width: 100%;
+  }
+
+  .usecases-template-para-title {
+    font-size: 18px;
+    width: 100%;
+  }
+  .usecases-template-para-text {
+    font-size: 16px;
+    width: 100%;
+  }
+  .usecases-template-body svg {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
