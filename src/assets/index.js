@@ -27,7 +27,7 @@ import { ReactComponent as TravelTourism } from "./TravelTourism.svg";
 import { ReactComponent as ShoppingUsecase } from "./Shopping-usecase.svg";
 import { ReactComponent as Logo } from "./Logo.svg";
 import { ReactComponent as LogoTwo } from "./LogoTwo.svg";
-import { ReactComponent as QrCode } from "./QrCode.svg";
+// import { ReactComponent as QrCode } from "./QrCode.svg";
 
 import { ReactComponent as ForShoppingUc } from "./ForShoppingUc.svg";
 import { ReactComponent as CorporateEventsUc } from "./CorporateEventsUc.svg";
@@ -66,9 +66,11 @@ import PowerIndustries from "./PowerIndustries.png";
 import MvrMedicalCenter from "./MvrMedicalCenter.png";
 import FeedBackOne from "./FeedBackOne.png";
 import FeedBackTwo from "./FeedBackTwo.png";
+import GetStarted from "./GetStarted.png";
+
 
 export {
-  QrCode,
+  GetStarted,
   Logo,
   LogoTwo,
   Scan,

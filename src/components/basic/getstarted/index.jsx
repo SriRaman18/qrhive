@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Button from '../button/button.js'
-import { QrCode, ArrowRight } from '../../../assets/index.js'
+import { GetStarted, ArrowRight } from '../../../assets/index.js'
 import './getstarted.css'
 
 function Getstarted() {
@@ -18,8 +18,8 @@ function Getstarted() {
         <Button btnText={'Get Started'} icon={ArrowRight} />
       </div>
       <div className="get-started-figure">
-        {/* <img className="get-started-svg"src={QrCode} alt="mobile"/> */}
-        <QrCode className="get-started-svg" />
+        <img className="get-started-svg"src={GetStarted} alt="mobile"/>
+        {/* <QrCode className="get-started-svg" /> */}
       </div>
     </div>
   )
