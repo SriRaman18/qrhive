@@ -294,4 +294,8 @@
 
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
+  .contact-back-btn {
+    display: hidden;
+    visibility: hidden;
+  }
 }
