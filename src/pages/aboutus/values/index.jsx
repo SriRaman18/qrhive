@@ -7,11 +7,11 @@ function Values() {
   return (
     <div className="values">
       <div className="values-texts">
-        <div className="values-title">Our values</div>
-        <p className="values-text">
+        <div className="values-title"><h2 className="values-title"> Our values</h2></div>
+        <h2 className="values-text">
           The story and values behind
           <br /> our company
-        </p>
+        </h2>
       </div>
       <div className="values-boxes">
         <Storydiv

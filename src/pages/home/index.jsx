@@ -21,8 +21,8 @@ function Home() {
       <Whyqrhive />
       <Customization />
       <Audienceinteraction />
-      <Faq />
       <Usecases />
+      <Faq />
       <Companynames />
       <Ourclientsspeak />
       <Getstarted />

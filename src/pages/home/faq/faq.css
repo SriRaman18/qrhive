@@ -11,11 +11,11 @@
   align-items: center;
   /* text-align: center; */
   /* height: 959px; */
-  background: #fff8ec;
+  background: var(--secondary-color);
   padding: 20px 0;
 }
 .faq-title {
-  color: #343f52;
+  color: var(--heading-color);
   font-family: sans-serif;
   font-size: 40px;
   font-style: normal;

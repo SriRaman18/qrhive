@@ -33,6 +33,9 @@ const usecasepagesdata = [
       "Elevating the shopping journey through QR codes heightens customer involvement and the probability of recurring transactions.",
     icon: Check,
     pic: <ShoppingPage />,
+    path: "shopping",
+
+
   },
   {
     id: 2,
@@ -51,6 +54,8 @@ const usecasepagesdata = [
       "Swift and simple QR menu updates obviate the requirement for expensive and environmentally wasteful paper menu printing.",
     icon: Check,
     pic: <RestaurantsMenus />,
+    path: "restaurants-menu",
+
   },
   {
     id: 3,
@@ -69,6 +74,8 @@ const usecasepagesdata = [
       "Monitor engagement and amass significant attendee insights using QR codes, aiding in refining forthcoming event planning and strategies.",
     icon: Check,
     pic: <CorporateEvents />,
+    path: "corporate-events",
+
   },
   {
     id: 4,
@@ -87,6 +94,8 @@ const usecasepagesdata = [
       "Employ QR codes to simplify the review submission process, motivating a greater number of customers to contribute their invaluable feedback.",
     icon: Check,
     pic: <CustomerReviews />,
+    path: "customer-review",
+
   },
 
   {
@@ -106,6 +115,8 @@ const usecasepagesdata = [
       "Extend information in various languages via QR codes, catering to global travelers and promoting greater inclusiveness.",
     icon: Check,
     pic: <TravelTourism />,
+    path: "travel-tourism",
+
   },
   {
     id: 6,
@@ -124,6 +135,9 @@ const usecasepagesdata = [
       "QR codes can be effortlessly disseminated across social media, emails, and promotional content, facilitating broader outreach to a diverse audience.",
     icon: Check,
     pic: <OnlineSeminars />,
+    path: "online-seminars",
+
+
   },
   {
     id: 7,
@@ -142,6 +156,8 @@ const usecasepagesdata = [
       "QR codes can deliver a seamless user journey by instantly connecting to landing pages, exclusive offers, or supplementary product details.",
     icon: Check,
     pic: <DigitalBranding />,
+    path: "digital-branding",
+
   },
   {
     id: 8,
@@ -160,6 +176,8 @@ const usecasepagesdata = [
       "Choose from diverse content options with QR Codes. For text, use Text QR Code; for web links, opt for Website URL QR Code; and for images, create an Image QR Code.",
     icon: Check,
     pic:  <WarrantyRegistration/>,
+    path: "warranty-registration",
+
   },
   {
     id: 9,
@@ -178,6 +196,8 @@ const usecasepagesdata = [
       "By minimizing errors, optimizing routing, and reducing manual labor, QR codes can lead to cost savings for logistics companies.",
     icon: Check,
     pic: <LogisticsIndustry />,
+    path: "logistics-industry",
+
   },
   {
     id: 10,
@@ -196,6 +216,8 @@ const usecasepagesdata = [
       "By offering exclusive content and rewards, QR codes foster a sense of loyalty and community among consumers.",
     icon: Check,
     pic: <FmcgIndustry />,
+    path: "fmcg-industry",
+
   },
   {
     id: 11,
@@ -214,6 +236,8 @@ const usecasepagesdata = [
       "QR codes are placed on products during the manufacturing process. These codes include details about the assembly line, quality checks performed & production timestamps.",
     icon: Check,
     pic: <SupplyChain />,
+    path: "supply-chain",
+
   },
   {
     id: 12,
@@ -232,6 +256,8 @@ const usecasepagesdata = [
       "Healthcare providers save time by quickly accessing patient information through QR codes, leading to more efficient care delivery.",
     icon: Check,
     pic: <HealthCare />,
+    path: "healthcare",
+
   },
 ];
 

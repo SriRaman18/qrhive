@@ -16,14 +16,14 @@
 
 .why-qrhive-heading {
   display: flex;
-  color: #343f52;
+  color: var(--heading-color);
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
   line-height: 61px; /* 145.238% */
 }
 .why-qrhive-text {
-  color: #60697b;
+  color: var(--text-color);
   text-align: justify;
   width: 660px;
   font-size: 18px;
@@ -82,7 +82,7 @@
 /* Media Query for 768px and above */
 @media (max-width: 768px) {
   .why-qrhive {
- padding: 30px;
+    padding: 30px;
   }
   .why-qrhive-heading {
     font-size: 30px;

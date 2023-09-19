@@ -5,9 +5,9 @@ const Audienceinteraction = () => {
   return (
     <div className="audienceinteraction">
       <div className="audienceinteraction-head">
-        <p className="audienceinteraction-head-heading">
+        <h2 className="audienceinteraction-head-heading">
           Uncover audience interactions with each QR Code.
-        </p>
+        </h2>
         <p className="audienceinteraction-head-para">
           Gain essential insights to identify successful codes and those needing
           adjustments.

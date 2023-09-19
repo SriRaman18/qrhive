@@ -9,10 +9,10 @@ function Trackqrcodes() {
       <Navbarhome />
       <div className="track-qrcodes">
         <div className="track-qrcodes-texts">
-          <p className="track-qrcodes-heading">
+          <h1 className="track-qrcodes-heading">
             Effortlessly generate, track{" "}
             <span className="highlight-head"> QR Codes</span> with ultimate ease.
-          </p>
+          </h1>
           <p className="track-qrcodes-text">
             Generate personalized QR codes, share them, and access statistics
             instantly on QRhive.

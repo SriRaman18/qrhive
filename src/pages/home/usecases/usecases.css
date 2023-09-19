@@ -24,7 +24,7 @@
   overflow: hidden;
 }
 .usecases-heading {
-  color: #343f52;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -54,8 +54,9 @@
 }
 .usecase-btn {
   gap: -10px;
+
 }
 
 .usecase-btn.btn-highlight {
-  background-color: #ffb744;
+  background-color: var(--primary-color);
 }

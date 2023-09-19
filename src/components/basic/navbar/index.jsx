@@ -38,7 +38,7 @@ function Navbar({ highlightButton }) {
             {highlightButton == "usecase" ? (
               <Buttonwithouticon btnText={"Use Case"} />
             ) : (
-              <NavLink className="a-li" to="/shopping">
+              <NavLink className="a-li" to="/usecases/shopping">
                 Use Cases
               </NavLink>
             )}

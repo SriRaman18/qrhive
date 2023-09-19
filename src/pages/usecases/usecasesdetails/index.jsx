@@ -7,13 +7,14 @@ import Footer from "../../../components/basic/footer";
 import Navbar from "../../../components/basic/navbar";
 import { useParams } from "react-router-dom";
 
-function Corporateevents() {
+function Usecasesdetails() {
   const { path } = useParams();
+  // console.log(path);
 
   const filteredData = usecasepagesdata.find(
     (usecase) => usecase.path === path
   );
-// console.log(filteredData)
+  // console.log(filteredData);
   return (
     <div className="">
       <Navbar highlightButton={"usecase"} />
@@ -38,4 +39,4 @@ function Corporateevents() {
   );
 }
 
-export default Corporateevents;
+export default Usecasesdetails;

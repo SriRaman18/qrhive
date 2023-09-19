@@ -24,7 +24,7 @@
       margin: 25px 0;
     } */
 .usecases-template-head-heading {
-  color: #343f52;
+  color: var(--heading-color);
   text-align: center;
   width: 948px;
   font-size: 50px;
@@ -33,7 +33,7 @@
   line-height: 65px; /* 130% */
 }
 .usecases-template-text {
-  color: #60697b;
+  color: var(--text-color);
   text-align: center;
   width: 635px;
   font-size: 18px;
@@ -61,7 +61,7 @@
   align-items: center;
   justify-content: flex-start;
   margin: 10px 0;
-  color: #60697b;
+  color: var(--text-color)ext-color);
   text-align: justify;
   align-items: flex-start;
   font-size: 20px;
@@ -74,7 +74,7 @@
 }
 
 .usecases-template-para-title {
-  color: #343f52;
+  color: var(--heading-color);
   font-size: 22px;
   font-style: normal;
   font-weight: 600;

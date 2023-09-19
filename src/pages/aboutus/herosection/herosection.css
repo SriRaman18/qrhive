@@ -19,7 +19,7 @@
 }
 
 .about-us-heading {
-  color: #343f52;
+  color: var(--heading-color);
   text-align: center;
   font-size: 50px;
   font-style: normal;
@@ -27,7 +27,7 @@
   line-height: 65px; /* 130% */
 }
 .about-us-para {
-  color: #60697b;
+  color: var(--text-color);
   text-align: center;
   font-size: 18px;
   font-style: normal;

@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 10vw;
-  background-color: #fff8ec;
+  background-color: var(--secondary-color);
 }
 .get-started-texts {
   display: flex;
@@ -21,7 +21,7 @@
   gap: 20px 0;
 }
 .get-started-heading {
-  color: #343f52;
+  color: var(--heading-color);
   font-family: sans-serif;
   width: 565px;
   font-size: 40px;
@@ -30,7 +30,7 @@
   line-height: 45px; /* 128.571% */
 }
 .get-started-para {
-  color: #60697b;
+  color: var(--text-color);
   font-family: sans-serif;
   font-size: 16px;
   font-style: normal;

@@ -1,16 +1,19 @@
-import React from 'react'
-import './shopping.css'
-import Usecasestemplate from '../../../components/basic/usecasestemplate'
-import usecasepagesdata from '../../../usecasepagesdata'
-import Usecases from '../../home/usecases'
-import Getstarted from '../../../components/basic/getstarted'
-import Footer from '../../../components/basic/footer'
-import Navbar from '../../../components/basic/navbar'
+import React from "react";
+import "./shopping.css";
+import Usecasestemplate from "../../../components/basic/usecasestemplate";
+import usecasepagesdata from "../../../usecasepagesdata";
+import Usecases from "../../home/usecases";
+import Getstarted from "../../../components/basic/getstarted";
+import Footer from "../../../components/basic/footer";
+import Navbar from "../../../components/basic/navbar";
+import { useScroll } from "react-router-dom";
+
 function Shopping() {
-  console.log('usecasepagesdata[0].pic0', usecasepagesdata[0].pic)
+  // console.log("usecasepagesdata[0].pic0", usecasepagesdata[0].pic);
+  // useScroll();
   return (
     <div className="shopping">
-      <Navbar highlightButton={'usecase'} />
+      <Navbar highlightButton={"usecase"} />
 
       <Usecasestemplate
         key={usecasepagesdata[0].id}
@@ -29,7 +32,7 @@ function Shopping() {
       <Getstarted />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Shopping
+export default Shopping;

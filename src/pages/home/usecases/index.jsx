@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import usecasedata from "../../../usecasedata";
 import Usecase from "../../../components/basic/usecase";
 import "./usecases.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+
 const Usecases = () => {
   const [index, setIndex] = useState(0);
+
+  const navigate = useNavigate();
 
   const transformValue = `translateX(${-index * 1200}px)`;
 
@@ -26,6 +31,8 @@ const Usecases = () => {
   function sixMove() {
     setIndex(5);
   }
+
+
   return (
     <div className="use-cases-div">
       <div className="usecases" id="use-cases">
@@ -35,7 +42,7 @@ const Usecases = () => {
           style={{ transform: transformValue }}>
           {usecasedata.map((usecase) => {
             return (
-              // <Link to={usecase.path}>
+              <div key={usecase.id} onClick={() => navigate(`/usecases/${usecase.path}`)}>
                 <Usecase
                   key={usecase.id}
                   title={usecase.title}
@@ -43,11 +50,15 @@ const Usecases = () => {
                   image={usecase.image}
                   text={usecase.text}
                   path={usecase.path}
+                  position={usecase.position}
+                color={usecase.color}
+                backGroundColor={usecase.backgroundColor}
                 />
-              // </Link>
+              </div>
             );
           })}
         </div>
+          {/* console.log(path); */}
         <div className="usecases-btn">
           <button
             className={

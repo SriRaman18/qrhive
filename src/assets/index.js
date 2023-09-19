@@ -12,8 +12,8 @@ import { ReactComponent as CustomizeIcon } from "./CustomizeIcon.svg";
 // import { ReactComponent as Travel } from "./travel-usecase.svg";
 // import { ReactComponent as Warranty } from "./warranty-usecase.svg";
 
-import { ReactComponent as  WarrantyRegistration } from "./WarrantyRegistration.svg";
-import { ReactComponent as CorporateEvents} from "./CorporateEvents.svg";
+import { ReactComponent as WarrantyRegistration } from "./WarrantyRegistration.svg";
+import { ReactComponent as CorporateEvents } from "./CorporateEvents.svg";
 import { ReactComponent as CustomerReviews } from "./CustomerReview.svg";
 import { ReactComponent as DigitalBranding } from "./DigitalBranding.svg";
 import { ReactComponent as FmcgIndustry } from "./FmcgIndustry.svg";
@@ -24,10 +24,24 @@ import { ReactComponent as RestaurantsMenus } from "./RestaurantsMenus.svg";
 import { ReactComponent as ShoppingPage } from "./Shopping.svg";
 import { ReactComponent as SupplyChain } from "./SupplyChain.svg";
 import { ReactComponent as TravelTourism } from "./TravelTourism.svg";
-import { ReactComponent as ShoppingUsecase} from "./Shopping-usecase.svg"
-import { ReactComponent as Logo } from "./Logo.svg"
-import { ReactComponent as LogoTwo } from "./LogoTwo.svg"
-import { ReactComponent as QrCode} from "./QrCode.svg"
+import { ReactComponent as ShoppingUsecase } from "./Shopping-usecase.svg";
+import { ReactComponent as Logo } from "./Logo.svg";
+import { ReactComponent as LogoTwo } from "./LogoTwo.svg";
+import { ReactComponent as QrCode } from "./QrCode.svg";
+
+import { ReactComponent as ForShoppingUc } from "./ForShoppingUc.svg";
+import { ReactComponent as CorporateEventsUc } from "./CorporateEventsUc.svg";
+import { ReactComponent as CustomerReviewsUc } from "./CustomerReviewsUc.svg";
+import { ReactComponent as DigitalBrandingUc } from "./DigitalBrandingUc.svg";
+import { ReactComponent as FmcgIndustryUc } from "./FmcgIndustryUc.svg";
+import { ReactComponent as HealthcareUc } from "./HealthcareUc.svg";
+import { ReactComponent as LogistricIndustryUc } from "./logistricIndustryUc.svg";
+import { ReactComponent as OnlineSeminarsUc } from "./OnlineSeminarsUc.svg";
+import { ReactComponent as RestarentMenuUc } from "./RestarentMenuUc.svg";
+import { ReactComponent as SupplyChainUc } from "./SupplyChainUc.svg";
+import { ReactComponent as TravelTourismUc } from "./TravelTourismUc.svg";
+import { ReactComponent as WarantyRegistrationUc } from "./WarantyRegistrationUc.svg";
+
 // import Logo from "./Logo.png";
 // import LogoTwo from "./Logo2.png";
 import Phone from "./Phone.jpg";
@@ -52,9 +66,6 @@ import PowerIndustries from "./PowerIndustries.png";
 import MvrMedicalCenter from "./MvrMedicalCenter.png";
 import FeedBackOne from "./FeedBackOne.png";
 import FeedBackTwo from "./FeedBackTwo.png";
-
-
-
 
 export {
   QrCode,
@@ -82,7 +93,6 @@ export {
   // Shopping,
   // Seminar,
   ShoppingUsecase,
-
   CorporateEvents,
   WarrantyRegistration,
   CustomerReviews,
@@ -108,5 +118,16 @@ export {
   MvrMedicalCenter,
   FeedBackOne,
   FeedBackTwo,
-  
+  ForShoppingUc,
+  WarantyRegistrationUc,
+  TravelTourismUc,
+  SupplyChainUc,
+  RestarentMenuUc,
+  OnlineSeminarsUc,
+  LogistricIndustryUc,
+  HealthcareUc,
+  FmcgIndustryUc,
+  DigitalBrandingUc,
+  CustomerReviewsUc,
+  CorporateEventsUc,
 };

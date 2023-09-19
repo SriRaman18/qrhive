@@ -24,14 +24,14 @@
   margin-top: 32%;
 }
 .usecase-heading {
-  color: #343f52;
+  color: var(--heading-color);
   font-size: 16px;
   font-weight: 600;
   line-height: 25px; /* 156.25% */
   padding-bottom: 10px;
 }
 .usecase-para {
-  color: #60697b;
+  color: var(--text-color);
   text-align: justify;
   width: 268px;
   font-size: 12px;
@@ -55,7 +55,24 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #d4917e;
+  /* color: #d4917e; */
   border-radius: 3px;
-  background: #ffebe5;
+  /* background: #ffebe5; */
+}
+.usecase-pic-text-right {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 100px;
+  /* padding: 4px 0; */
+  height: 28px;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* color: #d4917e; */
+  border-radius: 3px;
+  /* background: #ffebe5; */
 }

@@ -5,7 +5,9 @@ import Faqquestion from "../../../components/basic/faqquestion";
 function Faq() {
   return (
     <div className="faq">
-      <div className="faq-title">FAQ</div>
+      <div className="faq-title">
+        <h2 className="faq-title">FAQ</h2>
+      </div>
       <div className="faq-content">
         {Faqdata.map((question) => {
           return (

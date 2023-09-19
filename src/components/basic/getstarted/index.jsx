@@ -8,9 +8,9 @@ function Getstarted() {
   return (
     <div className="get-started">
       <div className="get-started-texts">
-        <p className="get-started-heading">
+        <h3 className="get-started-heading">
           Elevate Your Brand with QRhive. For any inquiries
-        </p>
+        </h3>
         <p className="get-started-para">
           Join our community of QR code enthusiasts and experience the
           convenience, engagement, and innovation that await.

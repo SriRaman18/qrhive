@@ -22,7 +22,7 @@ function Ourclientsspeak() {
     <div className="clients-speak">
 
     <div className="our-clients-speak">
-      <h1 className="our-clients-speak-heading">Our clients speak</h1>
+      <h2 className="our-clients-speak-heading">Our clients speak</h2>
       <div className="our-clients-speak-container" style={{ transform: transformValue }}>
         {Ourclientsspeakdata.map((data) => {
           return (

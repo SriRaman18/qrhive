@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import Usecasedata from "./usecasedata";
 import routesdata from "./routesdata";
 
@@ -33,11 +33,26 @@ import Ourclientsspeak from "./pages/home/ourclientsspeak";
 import Clientsfeedback from "./components/basic/clientsfeedback";
 import Contact from "./pages/contact";
 import Navbarhome from "./components/basic/navbarhome";
-import Usecase from "./components/basic/usecase";
-// import Shopping from "./pages/usecases/shopping";
-// import Traveltourism from "./pages/usecases/traveltourism";
 
+// -----------------------------------------
+import Usecase from "./components/basic/usecase";
+import Shopping from "./pages/usecases/shopping";
+// import Shopping from "./pages/usecases/shopping";
+import Traveltourism from "./pages/usecases/traveltourism";
+import Corporateevents from "./pages/usecases/corporateevents";
+import Customerreview from "./pages/usecases/customerreview";
+import Digitalbranding from "./pages/usecases/digitalbranding";
+import Fmcgindustry from "./pages/usecases/fmcgindustry";
+import Healthcare from "./pages/usecases/healthcare";
+import Logisticsindustry from "./pages/usecases/logisticsindustry";
+import Onlineseminars from "./pages/usecases/onlineseminars";
+import Restaurantsmenu from "./pages/usecases/restaurantsmenu";
+import Supplychain from "./pages/usecases/supplychain";
+import Warrantyregistration from "./pages/usecases/warrantyregistration";
+import Usecasesdetails from "./pages/usecases/usecasesdetails";
 function App() {
+  // Use the useEffect hook to listen for route changes
+
   return (
     <div className="App">
       {/* <Navbar />  */}
@@ -75,10 +90,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<Aboutus />} />
           <Route path="/contact-support" element={<Contact />} />
-
-          {routesdata.map((usecase) => {
-            return <Route key={usecase.id}path={usecase.pagename} element={usecase.element} />;
-          })}
+          <Route path="/usecases/:path" element={<Usecasesdetails />}>
+          </Route>
         </Routes>
       </Router>
     </div>
@@ -87,18 +100,23 @@ function App() {
 
 export default App;
 
-
-
-
-
-
-
-
-{/* <Route
+{
+  /* {routesdata.map((usecase) => (
+    <Route
+    // key={usecase.id}
+    path={usecase.pagename}
+    element={usecase.element}
+    />
+    ))} */
+  }
+  {
+    /* <Route
     path="/corporate-events-two"
-    element={<Corporateeventstwo />}
-  /> */}
-{/* <Route path="/corporate-events" element={<Corporateevents />} />
+  element={<Corporateeventstwo />}
+  /> */
+}
+{
+  /* <Route path="/corporate-events" element={<Corporateevents />} />
 <Route path="/digital-branding" element={<Digitalbranding />} />
 <Route path="/fmcg-industry" element={<Fmcgindustry />} />
 <Route path="/healthcare" element={<Healthcare />} />
@@ -106,4 +124,22 @@ export default App;
 <Route path="/restaurants-menu" element={<Restaurantsmenu />} />
 <Route path="/shopping" element={<Shopping />} />
 <Route path="/supply-chain" element={<Supplychain />} />
-<Route path="/healthcare" element={<Healthcare />} /> */}
+<Route path="/healthcare" element={<Healthcare />} /> */
+}
+
+{/* <Route path="shopping" element={<Shopping />} />
+<Route path="corporate-events" element={<Corporateevents />} />
+<Route path="digital-branding" element={<Digitalbranding />} />
+<Route path="fmcg-industry" element={<Fmcgindustry />} />
+<Route path="healthcare" element={<Healthcare />} />
+<Route path="logistics-industry" element={<Logisticsindustry />} />
+<Route path="restaurants-menu" element={<Restaurantsmenu />} />
+<Route path="shopping" element={<Shopping />} />
+<Route path="supply-chain" element={<Supplychain />} />
+<Route path="travel-tourism" element={<Traveltourism />} />
+
+<Route
+  path="warranty-register"
+  element={<Warrantyregistration />}
+/>
+<Route path="healthcare" element={<Healthcare />} /> */}

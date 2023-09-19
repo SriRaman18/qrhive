@@ -29,7 +29,7 @@
 }
 
 .customization-heading {
-  color: #343f52;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -43,7 +43,7 @@
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #60697b;
+  color: var(--text-color);
   text-align: justify;
   font-size: 18px;
   font-style: normal;
@@ -63,7 +63,7 @@
   align-items: center;
   justify-content: flex-start;
   margin: 10px 0;
-  color: #60697b;
+  color: var(--text-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

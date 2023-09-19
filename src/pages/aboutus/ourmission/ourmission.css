@@ -17,17 +17,16 @@
 .our-mission-texts {
   /* width: 616px; */
   width: 40vw;
-
 }
 .our-mission-heading {
-  color: #343f52;
+  color: var(--heading-color);
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 50px; /* 125% */
 }
 .our-mission-para {
-  color: #60697b;
+  color: var(--text-color);
   text-align: justify;
   font-size: 18px;
   font-style: normal;
@@ -56,12 +55,10 @@
 
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
-.our-mission{
+  .our-mission {
+    padding: 0vh 0vw;
+  }
 
-  padding: 0vh 0vw;
-}
-
- 
   .our-mission-heading {
     font-size: 32px;
   }
@@ -77,15 +74,13 @@
 @media (max-width: 768px) {
   .our-mission {
     flex-direction: column;
-   
   }
   .our-mission > * {
-    margin:  0;
+    margin: 0;
   }
   .our-mission-texts {
     /* width: 616px; */
     width: 80vw;
-  
   }
   .our-mission-heading {
     align-items: center;

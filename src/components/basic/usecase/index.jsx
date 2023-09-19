@@ -1,26 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./usecase.css";
 import Usecasedata from "../../../usecasedata";
 import { useNavigate } from "react-router-dom";
 // { title, content, image,text }
 // { title, content, image,text }
-// import { Outlet, Link } from "react-router-dom"
-const Usecase = ({ title, content, image, text, path }) => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    if (path) {
-      navigate(path);
-      window.scrollTo(0, 0);
-    }
-  };
+import { Outlet, Link } from "react-router-dom";
+const Usecase = ({
+  title,
+  content,
+  image,
+  text,
+  path,
+  backGroundColor,
+  position,
+  color,
+}) => {
+  // const navigate = useNavigate();
+
+  // const handleClick = () => {
+  //   if (path) {
+  //     navigate(`/usecases/${path}`);
+  //   }
+  // };
+
+  // useEffect(() => {
+
+  //   window.scrollTo(0, 0);
+  // }, [navigate]);
+  // onClick={handleClick}
   return (
-    <div className="usecase" onClick={handleClick}>
+    <div className="usecase">
       <div className="usecase-texts">
         <p className="usecase-heading">{title}</p>
         <p className="usecase-para">{content}</p>
       </div>
       <div className="usecase-pic">
-        <p className="usecase-pic-text">{text}</p>
+        <p
+          className={
+            position === "left" ? "usecase-pic-text" : "usecase-pic-text-right"
+          }
+          style={{
+            color: color,
+            backgroundColor: backGroundColor,
+          }}>
+          {text}
+        </p>
+
         {image}
       </div>
     </div>

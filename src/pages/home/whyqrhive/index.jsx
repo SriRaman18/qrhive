@@ -12,7 +12,7 @@ function Whyqrhive() {
         <Scanning className="why-qrhive-svg"/>
       </div>
       <div className="why-qrhive-texts">
-        <p className="why-qrhive-heading">Why QRhive</p>
+        <h2 className="why-qrhive-heading">Why QRhive</h2>
         <p className="why-qrhive-text">
           QRhive empowers you to conveniently generate online QR codes for a
           range of content, connecting videos, campaigns, landing pages, PDFs,
