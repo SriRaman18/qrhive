@@ -39,8 +39,10 @@
   /* position: fixed; */
   width: 100vw;
   min-height: 10vh;
-  position: absolute;
+  /* position: absolute; */
   position: fixed;
+  top: 0;
+  left: 0;
   font-family: sans-serif;
   height: auto;
   background-color: transparent;

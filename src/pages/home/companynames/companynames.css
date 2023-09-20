@@ -6,7 +6,6 @@
 
 .company-names {
   display: flex;
-
   flex-direction: row;
   width: 100vw;
   height: 60px;
@@ -15,20 +14,15 @@
   align-items: center;
   margin-top: 50px;
   padding: 10px 0;
-  /* box-shadow: inset -10px 0px 10px rgba(0, 0, 0, 0.5); */
-
-  /* background: linear-gradient(
-    90deg,
-    #fff 36.37%,
-    rgba(255, 255, 255, 0) 115.65%
-  ); */
+  position: relative;
 }
-.company-names div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* 
+.silder {
+  height: 60px;
+  width: 200px;
   margin: 0 100px;
-}
+} */
+
 .soorya-hospital {
   display: flex;
   flex-direction: row;
@@ -38,15 +32,15 @@
 }
 .company-names::before,
 .company-names::after {
-  content: "";
-  /* background: linear-gradient(
+  content: '';
+  background: linear-gradient(
     to right,
-    rgb(38, 231, 144) 0%,
-    rgba(235, 30, 30, 0) 100%
-  ); */
+    rgb(255, 255, 255) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   height: 100%;
   z-index: 2;
-  /* position: absolute; */
+  position: absolute;
   width: 50px;
 }
 .company-names::before {
@@ -59,11 +53,23 @@
   top: 0;
   transform: rotateZ(180deg);
 }
+
 .company-names-div {
   display: flex;
-  width: calc(250px * 10);
-  animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+  /* width: 100%; */
+  align-items: center;
+  justify-content: center;
 }
+
+.company-names-div div {
+  margin:0 30px;
+}
+.company-names-div {
+  display: flex;
+  width: calc(120px * 10);
+  animation: scroll 20s linear infinite;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);

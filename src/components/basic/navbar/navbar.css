@@ -43,10 +43,13 @@
   background-color: white;
 } */
 .nav {
+  /* position: ; */
   /* position: absolute; */
-  /* position: fixed; */
+  position: fixed;
   width: 100vw;
-  min-height: 10vh;
+  height: 10vh;
+  top: 0;
+  left: 0;
   font-family: sans-serif;
   height: auto;
   background-color: white;
