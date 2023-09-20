@@ -15,7 +15,7 @@ function Getstarted() {
           Join our community of QR code enthusiasts and experience the
           convenience, engagement, and innovation that await.
         </p>
-        <Button btnText={'Get Started'} icon={ArrowRight} />
+        <Button btnText={'Get Started'} size={false} />
       </div>
       <div className="get-started-figure">
         <img className="get-started-svg"src={GetStarted} alt="mobile"/>

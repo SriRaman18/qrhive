@@ -11,8 +11,14 @@ const Usecases = () => {
 
   const navigate = useNavigate();
 
-  const transformValue = `translateX(${-index * 1200}px)`;
-
+  const transformValue = `translateX(${-index * 600}px)`;
+  const getTransformValue = () => {
+    if (window.innerWidth >= 576) {
+      return `translateX(${-index * 600}px)`;
+    } else {
+      return `translateX(${-index * 350}px)`;
+    }
+  };
   function oneMove() {
     setIndex(0);
   }
@@ -31,8 +37,25 @@ const Usecases = () => {
   function sixMove() {
     setIndex(5);
   }
-
-
+// -------------------------
+function sevenMove() {
+  setIndex(6);
+}
+function eightMove() {
+  setIndex(7);
+}
+function nineMove() {
+  setIndex(8);
+}
+function tenMove() {
+  setIndex(9);
+}
+function elvenMove() {
+  setIndex(10);
+}
+function tweleMove() {
+  setIndex(11);
+}
   return (
     <div className="use-cases-div">
       <div className="usecases" id="use-cases">
@@ -101,6 +124,48 @@ const Usecases = () => {
             }
             onClick={sixMove}>
             6
+          </button>
+          <button
+            className={
+              index === 6 ? "usecase-btn btn-highlight" : "usecase-btn"
+            }
+            onClick={sevenMove}>
+            7
+          </button>
+          <button
+            className={
+              index === 7 ? "usecase-btn btn-highlight" : "usecase-btn"
+            }
+            onClick={eightMove}>
+            8
+          </button>
+          <button
+            className={
+              index === 8 ? "usecase-btn btn-highlight" : "usecase-btn"
+            }
+            onClick={nineMove}>
+            9
+          </button>
+          <button
+            className={
+              index === 9 ? "usecase-btn btn-highlight" : "usecase-btn"
+            }
+            onClick={tenMove}>
+            10
+          </button>
+          <button
+            className={
+              index === 10 ? "usecase-btn btn-highlight" : "usecase-btn"
+            }
+            onClick={elvenMove}>
+            11
+          </button>
+          <button
+            className={
+              index === 11 ? "usecase-btn btn-highlight" : "usecase-btn"
+            }
+            onClick={tweleMove}>
+            12
           </button>
         </div>
       </div>

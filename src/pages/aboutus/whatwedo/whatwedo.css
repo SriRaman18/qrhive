@@ -91,7 +91,7 @@
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
   .what-we-do-svg {
-    width: 375px;
+    width: 335px;
   }
   .what-we-do-heading {
     font-size: 28px;

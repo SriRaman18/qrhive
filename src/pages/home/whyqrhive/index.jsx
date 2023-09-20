@@ -22,7 +22,7 @@ function Whyqrhive() {
           distribute documents, links, videos, images, or facilitate immediate
           WhatsApp interactions with your target audience.
         </p>
-        <Button btnText={'Know More'} icon={ArrowRight} />
+        <Button btnText={'Know More'} size={false} />
       </div>
     </div>
   )

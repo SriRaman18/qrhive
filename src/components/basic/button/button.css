@@ -22,3 +22,22 @@
   /* color: white; */
 }
 
+.home-btn{
+  background-color: var(--primary-color);
+  font-family: sans-serif;
+ 
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 50px;
+  height: 55px;
+  width: 191px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+@media (max-width: 576px) {
+ 
+}

@@ -3,11 +3,11 @@ import "./button.css";
 // import { ArrowRight } from "../../../assets";
 import { FiArrowRightCircle } from "react-icons/fi";
 
-const Button = ({ btnText, icon }) => {
+const Button = ({ btnText, size }) => {
   return (
-    <div className="button">
+    <div className={!size ? "button" : "button home-btn"}>
       <p className="btn-text"> {btnText}</p>
-      <FiArrowRightCircle className="right-circle"/>
+      <FiArrowRightCircle className="right-circle" />
     </div>
   );
 };

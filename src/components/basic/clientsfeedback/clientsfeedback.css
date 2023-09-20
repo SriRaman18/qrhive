@@ -87,3 +87,22 @@
   border-color: rgb(255, 255, 255) transparent transparent transparent;
  
 } */
+@media (max-width: 1200px) {
+
+}
+
+/* Media Query for 992px and above */
+@media (max-width: 992px) {
+
+}
+
+/* Media Query for 768px and above */
+@media (max-width: 768px) {
+
+}
+
+/* Media Query for 576px and above (mobile) */
+@media (max-width: 576px) {
+
+}
+

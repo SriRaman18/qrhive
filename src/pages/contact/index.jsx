@@ -20,14 +20,14 @@ function Contact() {
       </div>
       <div className="contact-form">
         <div className="contact-form-texts">
-          <h1 className="contact-form-heading">Talk to an expert</h1>
+          <h1 className="contact-form-heading">Talk To An Expert</h1>
           <p className="contact-form-para">
             We’d like to learn more about you and how we can work together. Can
             you tell us a bit more about yourself?
           </p>
         </div>
         <div className="contact-form-inputs">
-          <div className="contact-form-inputs-first-div">
+          {/* <div className="contact-form-inputs-first-div"> */}
             <div className="input-container">
               <label htmlFor="first-name" className="input-label">
                 First Name*
@@ -40,8 +40,8 @@ function Contact() {
               </label>
               <input type="text" id="last-name" />
             </div>
-          </div>
-          <div className="contact-form-inputs-second-div">
+          {/* </div> */}
+          {/* <div className="contact-form-inputs-second-div"> */}
             <div className="input-container">
               <label htmlFor="email" className="input-label">
                 {" "}
@@ -55,7 +55,7 @@ function Contact() {
               </label>
               <input type="text" id="organisation-name" />
             </div>
-          </div>
+          {/* </div> */}
           <div className="input-container input-container-full">
             <input
               type="text"
@@ -79,7 +79,7 @@ function Contact() {
           </div>
           <div className="check-box-container">
             <label class="check-box-label">
-              <input type="checkbox" name="checkbox" className="check-box" />I
+              <input type="checkbox" name="checkbox" className="check-box check-box-label-input"  />I
               would like to receive details about products, services and events
               from QRhive.
             </label>

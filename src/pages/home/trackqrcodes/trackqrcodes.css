@@ -100,7 +100,7 @@
 @media (max-width: 1400px) {
   .track-qrcodes {
     height: 100vh;
-    padding: 0 3vw;
+    padding: 0 5vw;
   }
   .home {
     border-bottom-left-radius: 500%;
@@ -197,7 +197,8 @@
 @media (max-width: 576px) {
   .track-qrcodes-heading {
     margin-top: 15vh;
-    width: 435px;
+    width: 410px;
+    line-height: 50.5px;
 
     font-size: 35px;
   }
@@ -205,11 +206,11 @@
     font-size: 35px;
   }
   .track-qrcodes-text {
-    width: 380px;
+    width: 370px;
     color: var(--text-color);
   }
   .track-qrcodes-pic {
-    width: 400px;
+    width: 370px;
     justify-content: center;
     align-items: center;
   }

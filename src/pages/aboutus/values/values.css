@@ -67,4 +67,13 @@
 
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
+  .values-title {
+ 
+  
+  font-size: 24px;
+ 
+  width: 174px;
+  padding: 3px 0;
+
+}
 }

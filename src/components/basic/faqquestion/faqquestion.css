@@ -96,13 +96,13 @@
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
   .single-faq {
-    width: 390px;
+    width: 365px;
   }
   .question-title {
     font-size: 14px;
   }
   .question-ans-text {
-    width: 375px;
+    width: 360px;
     font-size: 12px;
   }
 }

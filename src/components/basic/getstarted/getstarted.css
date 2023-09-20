@@ -56,9 +56,13 @@
 
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
+  .get-started{
+    padding: 20px 5vw;
+
+  }
   .get-started-heading {
     font-size: 32px;
-    width: 485px;
+    width: 415px;
   }
 
   .get-started-para {
@@ -66,8 +70,8 @@
     width: 327px;
   }
   .get-started-svg {
-    width: 296px;
-    height: 297px;
+    width: 270px;
+    height: 272px;
   }
 }
 

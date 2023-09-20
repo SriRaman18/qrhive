@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Logo } from "../../../assets";
 import Buttonwithouticon from "../buttonwithouticon";
 import "./navbarhome.css";
@@ -9,7 +9,17 @@ import { NavLink } from "react-router-dom";
 function Navbarhome() {
   const [showSideNavbar, setShowSideNavbar] = useState(false);
 
-  // console.log(showSideNavbar);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (showSideNavbar && !event.target.closest(".nav-bar")) {
+        // If navigation bar is open and the click is outside of it, close it
+        setShowSideNavbar(false);
+      }
+    };
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [showSideNavbar]);
 
   return (
     <div className="nav-bar" id="#">
@@ -30,7 +40,7 @@ function Navbarhome() {
             </a>
           </div>
 
-          <div className="li">
+          <div className="li" onClick={() => setShowSideNavbar(false)}>
             <a className="a-li " href="#use-cases">
               Use Cases
             </a>
