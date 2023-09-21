@@ -5,7 +5,7 @@ import { FiArrowRightCircle } from "react-icons/fi";
 
 const Button = ({ btnText, size }) => {
   return (
-    <div className={!size ? "button" : "button home-btn"}>
+    <div className={!size ? "button" : "button home-btn"} data-aos="fade-down">
       <p className="btn-text"> {btnText}</p>
       <FiArrowRightCircle className="right-circle" />
     </div>

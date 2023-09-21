@@ -80,21 +80,33 @@
 /* Media query for screens less than 576px (width < 576px) */
 @media (max-width: 576px) {
   .usecase {
-    width: 350px;
+    width: 255px;
     height: 350px;
+      flex-direction: column;
+      font-family: sans-serif;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      justify-content: center;
+      align-items: center;
+  gap: 5px;
+
   }
   .usecase-heading {
-    font-size: 14px;
-    display: none;
+    font-size: 20px;
+    /* display: none; */
+  }
+  .usecase-texts {
+    margin-top: 0%;
   }
   .usecase-para {
-    font-size: 12px;
-    width: 70px;
+    /* font-size: 12px;
+    width: 70px; */
     display: none;
 
   }
   .usecase svg {
-    width: 250px;
+    width: 220px;
     height: 275px;
   }
 }

@@ -5,16 +5,16 @@ const Audienceinteraction = () => {
   return (
     <div className="audienceinteraction">
       <div className="audienceinteraction-head">
-        <h2 className="audienceinteraction-head-heading">
+        <h2 className="audienceinteraction-head-heading" data-aos="fade-down">
           Uncover audience interactions with each QR Code.
         </h2>
-        <p className="audienceinteraction-head-para">
+        <p className="audienceinteraction-head-para" data-aos="fade-down">
           Gain essential insights to identify successful codes and those needing
           adjustments.
         </p>
       </div>
       <div className="audienceinteraction-body">
-        <div className="audienceinteraction-body-texts">
+        <div className="audienceinteraction-body-texts" data-aos="fade-down">
           <div className="audienceinteraction-icon-text">
             <img
               src={Check}
@@ -49,9 +49,9 @@ const Audienceinteraction = () => {
             </p>
           </div>
         </div>
-        {/* <div className="audience-interaction-pic"> */}
+        <div className="audience-interaction-pic"  data-aos="fade-left">
         <Chart className="audience-interaction-svg" />
-        {/* </div> */}
+        </div>
       </div>
     </div>
   );

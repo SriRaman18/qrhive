@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import usecasedata from "../../../usecasedata";
 import Usecase from "../../../components/basic/usecase";
 import "./usecases.css";
@@ -10,15 +10,33 @@ const Usecases = () => {
   const [index, setIndex] = useState(0);
 
   const navigate = useNavigate();
+  const screenWidth = window.innerWidth;
+  const transformValue = `translateX(${
+    -index * (screenWidth > 576 ? 600 : 305)
+  }px)`;
+  // const transformValue = `translateX(${-index * 600}px)`;
+  // const getTransformValue = () => {
+  //   if (window.innerWidth >= 576) {
+  //     return `translateX(${-index * 600}px)`;
+  //   } else {
+  //     return `translateX(${-index * 350}px)`;
+  //   }
+  // };
 
-  const transformValue = `translateX(${-index * 600}px)`;
-  const getTransformValue = () => {
-    if (window.innerWidth >= 576) {
-      return `translateX(${-index * 600}px)`;
-    } else {
-      return `translateX(${-index * 350}px)`;
-    }
-  };
+  // const [transformValue, setTransformValue] = useState(getTransformValue);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setTransformValue(getTransformValue());
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, [index]);
+
   function oneMove() {
     setIndex(0);
   }
@@ -37,35 +55,38 @@ const Usecases = () => {
   function sixMove() {
     setIndex(5);
   }
-// -------------------------
-function sevenMove() {
-  setIndex(6);
-}
-function eightMove() {
-  setIndex(7);
-}
-function nineMove() {
-  setIndex(8);
-}
-function tenMove() {
-  setIndex(9);
-}
-function elvenMove() {
-  setIndex(10);
-}
-function tweleMove() {
-  setIndex(11);
-}
+  // -------------------------
+  function sevenMove() {
+    setIndex(6);
+  }
+  function eightMove() {
+    setIndex(7);
+  }
+  function nineMove() {
+    setIndex(8);
+  }
+  function tenMove() {
+    setIndex(9);
+  }
+  function elvenMove() {
+    setIndex(10);
+  }
+  function tweleMove() {
+    setIndex(11);
+  }
   return (
     <div className="use-cases-div">
       <div className="usecases" id="use-cases">
-        <p className="usecases-heading">Use cases of QRhive</p>
+        <p className="usecases-heading" data-aos="fade-down">Use cases of QRhive</p>
         <div
           className="usecases-container"
           style={{ transform: transformValue }}>
           {usecasedata.map((usecase) => {
             return (
-              <div key={usecase.id} onClick={() => navigate(`/usecases/${usecase.path}`)}>
+              <div
+                key={usecase.id}
+                onClick={() => navigate(`/usecases/${usecase.path}`)}
+                >
                 <Usecase
                   key={usecase.id}
                   title={usecase.title}
@@ -74,15 +95,15 @@ function tweleMove() {
                   text={usecase.text}
                   path={usecase.path}
                   position={usecase.position}
-                color={usecase.color}
-                backGroundColor={usecase.backgroundColor}
+                  color={usecase.color}
+                  backGroundColor={usecase.backgroundColor}
                 />
               </div>
             );
           })}
         </div>
-          {/* console.log(path); */}
-        <div className="usecases-btn">
+        {/* console.log(path); */}
+        <div className="usecases-btn" data-aos="fade-down">
           <button
             className={
               index === 0 ? "usecase-btn btn-highlight" : "usecase-btn"

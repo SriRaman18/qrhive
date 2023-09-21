@@ -17,12 +17,16 @@ function Usecasestemplate({
   return (
     <div className="usecases-template">
       <div className="usecases-template-head">
-        <h1 className="usecases-template-head-heading">{headTitle}</h1>
-        <p className="usecases-template-text">{headText}</p>
+        <h1 className="usecases-template-head-heading" data-aos="fade-left">
+          {headTitle}
+        </h1>
+        <p className="usecases-template-text" data-aos="fade-down">
+          {headText}
+        </p>
       </div>
       <div className="usecases-template-body">
         <div className="usecases-template-body-texts">
-          <div className="usecases-template-icon-text">
+          <div className="usecases-template-icon-text" data-aos="fade-down">
             <img
               src={icon}
               alt="check-circle"
@@ -33,7 +37,7 @@ function Usecasestemplate({
               <p className="usecases-template-para-text">{bodyTextOne}</p>
             </div>
           </div>
-          <div className="usecases-template-icon-text">
+          <div className="usecases-template-icon-text" data-aos="fade-down">
             <img
               src={icon}
               alt="check-circle"
@@ -45,7 +49,7 @@ function Usecasestemplate({
             </div>
           </div>
           <div></div>
-          <div className="usecases-template-icon-text">
+          <div className="usecases-template-icon-text" data-aos="fade-down">
             <img
               src={icon}
               alt="check-circle"
@@ -57,7 +61,7 @@ function Usecasestemplate({
             </div>
           </div>
         </div>
-        {pic}
+        <div data-aos="fade-left">{pic}</div>
       </div>
     </div>
   );

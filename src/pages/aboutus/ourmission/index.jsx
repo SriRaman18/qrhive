@@ -5,8 +5,8 @@ function Ourmission() {
   return (
     <div className="our-mission">
       <div className="our-mission-texts">
-        <h2 className="our-mission-heading">Our Mission</h2>
-        <p className="our-mission-para">
+        <h2 className="our-mission-heading" data-aos="fade-left">Our Mission</h2>
+        <p className="our-mission-para"  data-aos="fade-down">
           At the core of our mission is the drive to simplify QR code generation
           while upholding exceptional quality and functionality. We recognize
           the growing significance of QR codes in today's digital realm and aim
@@ -22,7 +22,7 @@ function Ourmission() {
           connectivity and unlimited possibilities.
         </p>
       </div>
-      <div>
+      <div data-aos="fade-right">
         <Scan className="our-mission-svg" />
       </div>
     </div>

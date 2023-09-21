@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Logo } from "../../../assets";
 import Buttonwithouticon from "../buttonwithouticon";
 import "./navbarhome.css";
@@ -7,24 +7,66 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 
 function Navbarhome() {
+  const sideNavbar = document.getElementsByClassName("nav-bar");
+
   const [showSideNavbar, setShowSideNavbar] = useState(false);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (showSideNavbar && !event.target.closest(".nav-bar")) {
-        // If navigation bar is open and the click is outside of it, close it
-        setShowSideNavbar(false);
-      }
-    };
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [showSideNavbar]);
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (showSideNavbar && !event.target.closest(".nav-bar")) {
+  //       // If navigation bar is open and the click is outside of it, close it
+  //       setShowSideNavbar(false);
+  //     }
+  //   };
+  //   return () => {
+  //     document.removeEventListener("click", handleClickOutside);
+  //   };
+  // }, [showSideNavbar]);
 
+  // document.addEventListener("click", handleClickOutside);
+
+  const navbarRef = useRef(null);
+
+  // Function to handle click outside the navbar
+  // const handleClickOutside = (event) => {
+  //   if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+  //     showSideNavbar(false);
+  //   }
+  // };
+  const navbarHome = document.getElementById("navbar-home");
+  document.body.addEventListener("click", (event) => {
+    if (navbarHome && !navbarHome.contains(event.target)) {
+      // If navigation bar is open and the click is outside of it, close it
+      setShowSideNavbar(false);
+    }
+  });
+  document.addEventListener("click", function (event) {
+    if (event.target.className) {
+      // console.log("Clicked Element's Class Name:", event.target.className);
+    }
+  });
+
+  // Add event listener when the component mounts
+  // useEffect(() => {
+  //   if (showSideNavbar) {
+  //     document.addEventListener("mousedown", handleClickOutside);
+  //   } else {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   }
+
+  // Clean up the event listener when the component unmounts
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [showSideNavbar]);
+
+  // console.log(navbarRef.current);
   return (
-    <div className="nav-bar" id="#">
+    <div className="nav-bar" id="navbar-home" ref={navbarRef}>
       <div className="logo">
-        <Logo />
+        <NavLink className="a-li " to="/">
+          <Logo />
+        </NavLink>
       </div>
       <div className="menu-btn" onClick={() => setShowSideNavbar(true)}>
         <GiHamburgerMenu className="menu" />
@@ -41,9 +83,11 @@ function Navbarhome() {
           </div>
 
           <div className="li" onClick={() => setShowSideNavbar(false)}>
-            <a className="a-li " href="#use-cases">
+          <NavLink className="a-li " to="/usecases/shopping">
+
               Use Cases
-            </a>
+              </NavLink>
+
           </div>
 
           <div className="li">

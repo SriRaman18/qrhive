@@ -73,7 +73,7 @@
 }
 
 .audience-interaction-svg {
-  width: 50%;
+  width: 100%;
   margin-left: 10vw;
 }
 
@@ -95,19 +95,29 @@
     margin-top: 40px;
     flex-direction: column;
     align-items: center;
+  padding: 0 5vw;
+
   }
   .audienceinteraction-body-texts {
-    width: 80%;
+    width: 100%;
   }
 
   .audienceinteraction-icon-text {
     font-size: 18px;
     text-align: justify;
   }
-
+  .audience-interaction-pic {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .audience-interaction-svg {
     width: 80%;
     margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

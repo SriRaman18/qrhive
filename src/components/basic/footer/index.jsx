@@ -5,8 +5,8 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-body">
-        <div className="footer-texts">
-         <LogoTwo/>
+        <div className="footer-texts" data-aos="fade-down">
+          <LogoTwo />
           <p className="footer-text">
             Generate custom QR codes with QRhive. Add your URLs to create faster
             links for customers to access your website and social media. Improve
@@ -15,7 +15,7 @@ function Footer() {
           </p>
         </div>
         <div className="footer-Contents">
-          <div className="footer-content">
+          <div className="footer-content" data-aos="fade-down">
             <p> QRhive</p>
             <ul className="footer-list">
               <li>
@@ -35,7 +35,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer-content">
+          <div className="footer-content" data-aos="fade-down">
             <p> Help</p>
             <ul className="footer-list">
               <li>
@@ -43,7 +43,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer-content">
+          <div className="footer-content" data-aos="fade-down">
             <p> Legal</p>
             <ul className="footer-list">
               <li>
@@ -54,7 +54,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer-content">
+          <div className="footer-content" data-aos="fade-down">
             <p> Company</p>
             <ul className="footer-list footer-list-sm">
               <li>
@@ -73,7 +73,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer-copy-rights">
+      <div className="footer-copy-rights" >
         <p>Copyright © 2023 QRhive Website | All Rights Reserved </p>
       </div>
     </div>

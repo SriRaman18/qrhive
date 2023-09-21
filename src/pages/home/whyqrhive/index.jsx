@@ -8,12 +8,12 @@ import Button from '../../../components/basic/button/button'
 function Whyqrhive() {
   return (
     <div className="why-qrhive" id='why-qrhive'>
-      <div className="why-qrhive-pic">
+      <div className="why-qrhive-pic" data-aos="fade-right">
         <Scanning className="why-qrhive-svg"/>
       </div>
       <div className="why-qrhive-texts">
-        <h2 className="why-qrhive-heading">Why QRhive</h2>
-        <p className="why-qrhive-text">
+        <h2 className="why-qrhive-heading" data-aos="fade-down">Why QRhive</h2>
+        <p className="why-qrhive-text" data-aos="fade-down">
           QRhive empowers you to conveniently generate online QR codes for a
           range of content, connecting videos, campaigns, landing pages, PDFs,
           menus, apps, portfolios, and electronic versions of your flyers or

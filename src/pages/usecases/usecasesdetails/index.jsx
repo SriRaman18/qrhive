@@ -6,11 +6,15 @@ import Getstarted from "../../../components/basic/getstarted";
 import Footer from "../../../components/basic/footer";
 import Navbar from "../../../components/basic/navbar";
 import { useParams } from "react-router-dom";
-
+import { useLocation } from "react-router-dom";
 function Usecasesdetails() {
   const { path } = useParams();
   // console.log(path);
-
+  // const location = useLocation();
+  // const from = new URLSearchParams(location.search).get("from");
+  // const scrollPosition = from === "home" ? 0 : someOtherValue;
+ 
+ 
   const filteredData = usecasepagesdata.find(
     (usecase) => usecase.path === path
   );
@@ -32,7 +36,7 @@ function Usecasesdetails() {
         pic={filteredData.pic}
         icon={filteredData.icon}
       />
-      <Usecases />
+      {/* <Usecases /> */}
       <Getstarted />
       <Footer />
     </div>

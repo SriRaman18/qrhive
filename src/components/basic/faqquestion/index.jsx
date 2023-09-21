@@ -4,8 +4,8 @@ import { FaqOne, FaqTwo } from "../../../assets";
 function Faqquestion({ title, info }) {
   const [showInfo, setShowInfo] = useState(false);
   return (
-    <div className="single-faq">
-      <div className="faq-question">
+    <div className="single-faq" data-aos="fade-down">
+      <div className="faq-question" >
         <p className="question-title">{title}</p>
         <div className="question-btn" onClick={() => setShowInfo(!showInfo)}>
           {showInfo ? <img src={FaqTwo} className="faq-icon" alt="" /> : <img src={FaqOne} className="faq-icon"alt="" />}

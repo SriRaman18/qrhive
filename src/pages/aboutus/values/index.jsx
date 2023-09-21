@@ -7,8 +7,8 @@ function Values() {
   return (
     <div className="values">
       <div className="values-texts">
-        <div className="values-title"><h2 className="values-title"> Our values</h2></div>
-        <h2 className="values-text">
+        <div className="values-title" data-aos="fade-left"><h2 className="values-title" > Our values</h2></div>
+        <h2 className="values-text"  data-aos="fade-down">
           The story and values behind
           <br /> our company
         </h2>

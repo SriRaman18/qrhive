@@ -4,7 +4,7 @@ import "./story.css";
 
 function Storydiv({pic, heading, text}) {
   return (
-    <div className="story">
+    <div className="story"  data-aos="fade-down">
       <div className="story-pic">
         <img className="story-pic"src={pic} alt="pic" />
       </div>

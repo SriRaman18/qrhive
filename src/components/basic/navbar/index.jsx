@@ -13,9 +13,14 @@ function Navbar({ highlightButton }) {
   const navigate = useNavigate();
 
   const [showSideNavbar, setShowSideNavbar] = useState(false);
-
+  const navbar = document.getElementById("navbar");
+  document.body.addEventListener("click", (event) => {
+    if (navbar && !navbar.contains(event.target)) {
+      setShowSideNavbar(false);
+    }
+  });
   return (
-    <div className="nav" id="#">
+    <div className="nav" id="navbar">
       <div className="logo">
         <NavLink className="a-li" to="/">
           <Logo />

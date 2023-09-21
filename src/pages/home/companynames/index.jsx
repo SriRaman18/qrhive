@@ -11,17 +11,13 @@ import "./companynames.css";
 
 function Companynames() {
   return (
-    <div className="company-names">
-      <div className="company-names-div">
+    <div className="company-names" data-aos="fade-down">
+      <div className="company-names-div" >
         <div className="slider">
           <img src={JbHospital} alt="JbHospital" />
         </div>
         <div className="soorya-hospital slider">
-          <img
-           
-            src={SooryaHospitalIcon}
-            alt="SooryaHospitalIcon"
-          />
+          <img src={SooryaHospitalIcon} alt="SooryaHospitalIcon" />
           <img src={SooryaHospital} alt="SooryaHospital" />
         </div>
         <div className="slider">

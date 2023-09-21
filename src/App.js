@@ -5,6 +5,10 @@ import { useNavigate } from "react-router-dom";
 import Usecasedata from "./usecasedata";
 import routesdata from "./routesdata";
 
+import Aos from "aos";
+
+import "aos/dist/aos.css";
+
 import { StoryOne } from "./assets";
 // import Navbar from "./components/basic/navbar";
 import Getstarted from "./components/basic/getstarted";
@@ -50,8 +54,14 @@ import Restaurantsmenu from "./pages/usecases/restaurantsmenu";
 import Supplychain from "./pages/usecases/supplychain";
 import Warrantyregistration from "./pages/usecases/warrantyregistration";
 import Usecasesdetails from "./pages/usecases/usecasesdetails";
+
 function App() {
   // Use the useEffect hook to listen for route changes
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true });
+  }, []);
+
+
 
   return (
     <div className="App">
@@ -84,14 +94,11 @@ function App() {
       {/* <Aboutus/>  */}
       {/* <Home /> */}
       <Router>
-        {/* <Traveltourism /> */}
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<Aboutus />} />
           <Route path="/contact-support" element={<Contact />} />
-          <Route path="/usecases/:path" element={<Usecasesdetails />}>
-          </Route>
+          <Route path="/usecases/:path" element={<Usecasesdetails />}></Route>
         </Routes>
       </Router>
     </div>
@@ -108,9 +115,9 @@ export default App;
     element={usecase.element}
     />
     ))} */
-  }
-  {
-    /* <Route
+}
+{
+  /* <Route
     path="/corporate-events-two"
   element={<Corporateeventstwo />}
   /> */
@@ -127,7 +134,8 @@ export default App;
 <Route path="/healthcare" element={<Healthcare />} /> */
 }
 
-{/* <Route path="shopping" element={<Shopping />} />
+{
+  /* <Route path="shopping" element={<Shopping />} />
 <Route path="corporate-events" element={<Corporateevents />} />
 <Route path="digital-branding" element={<Digitalbranding />} />
 <Route path="fmcg-industry" element={<Fmcgindustry />} />
@@ -142,4 +150,5 @@ export default App;
   path="warranty-register"
   element={<Warrantyregistration />}
 />
-<Route path="healthcare" element={<Healthcare />} /> */}
+<Route path="healthcare" element={<Healthcare />} /> */
+}

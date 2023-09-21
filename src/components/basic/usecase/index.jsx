@@ -29,26 +29,30 @@ const Usecase = ({
   // }, [navigate]);
   // onClick={handleClick}
   return (
-    <div className="usecase">
-      <div className="usecase-texts">
-        <p className="usecase-heading">{title}</p>
-        <p className="usecase-para">{content}</p>
-      </div>
-      <div className="usecase-pic">
-        <p
-          className={
-            position === "left" ? "usecase-pic-text" : "usecase-pic-text-right"
-          }
-          style={{
-            color: color,
-            backgroundColor: backGroundColor,
-          }}>
-          {text}
-        </p>
+    // <Link to={`usecases/${path}`}>
+      <div className="usecase" data-aos="fade-down">
+        <div className="usecase-texts">
+          <p className="usecase-heading">{title}</p>
+          <p className="usecase-para">{content}</p>
+        </div>
+        <div className="usecase-pic">
+          <p
+            className={
+              position === "left"
+                ? "usecase-pic-text"
+                : "usecase-pic-text-right"
+            }
+            style={{
+              color: color,
+              backgroundColor: backGroundColor,
+            }}>
+            {text}
+          </p>
 
-        {image}
+          {image}
+        </div>
       </div>
-    </div>
+    // </Link>
   );
 };
 
