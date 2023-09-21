@@ -36,7 +36,7 @@ function Usecasesdetails() {
         pic={filteredData.pic}
         icon={filteredData.icon}
       />
-      {/* <Usecases /> */}
+      <Usecases />
       <Getstarted />
       <Footer />
     </div>

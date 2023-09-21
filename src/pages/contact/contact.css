@@ -193,6 +193,14 @@
   line-height: 20px;
   cursor: pointer; /* 125% */
 }
+/* .sub-btn{
+  width: 125px;
+  height: 62px;
+ 
+
+  font-size: 85px;
+
+} */
 
 /* Media Query for 1200px and above */
 @media (max-width: 1200px) {
@@ -221,9 +229,14 @@
 
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
+  .contact {
+ 
+    padding: 3vh 0;
+  }
   .contact-form-heading {
     font-size: 30px;
   }
+
   .contact-pic-container {
     width: 0%;
   }
@@ -251,8 +264,11 @@
     margin-top: 30px;
     gap: 30px;
   }
+  .check-box-label {
+/* width: 100vw; */
+  }
   .check-box-inputs {
-    width: 65vw;
+    width: 90vw;
     padding: 10px 0;
   }
   .contact-back-btn {
@@ -280,14 +296,14 @@
   .input-container {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 90vw;
     margin: 10px 0;
   }
 
   .input-container-full {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 90vw;
     margin: 10px 0;
   }
   .check-box-notice {
@@ -295,7 +311,7 @@
     justify-content: center;
     align-items: flex-start;
     text-align: flex-start;
-    width: 70vw;
+    width: 95vw;
   }
 }
 
@@ -305,7 +321,7 @@
     width: 0px;
   }
   .contact-form {
-    padding: vh 5vw;
+    margin: 2vh 1vw;
     margin-top: 0;
     width: 100%;
     justify-content: center;
@@ -326,8 +342,11 @@
  
   .contact-back-btn {
     position: absolute;
-    top: 0%;
-    left: 10%;
+    top: 10px;
+    left: 9%;
+    background-color: var(--primary-color);
+    border-radius: 0px;
+
   }
 }
 

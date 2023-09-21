@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: flex-start;
   margin: 10px 0;
-  color: var(--text-color)ext-color);
+  color: var(--text-color);
   text-align: justify;
   align-items: flex-start;
   font-size: 20px;
@@ -101,7 +101,8 @@
     height: 370px;
   }
   .usecases-template-icon-text {
-    width: 507px;
+    /* width: 507px; */
+    width: 90vw;
 
     font-size: 18px;
   }
@@ -123,9 +124,11 @@
     font-size: 18px;
   }
   .usecases-template-body-texts {
+    /* width: 90vw; */
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 0;
   }
   .usecases-template-body svg {
     justify-content: center;
@@ -140,7 +143,7 @@
   }
   .usecases-template-para-text {
     font-size: 18px;
-    width: 500px;
+    /* width: 500px; */
   }
 }
 
@@ -228,12 +231,12 @@
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
   .usecases-template-head-heading {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
   }
 
   .usecases-template-body {
-    width: 80vw;
+    width: 95vw;
   }
 
   .usecases-template-body-texts {

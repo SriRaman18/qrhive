@@ -93,7 +93,7 @@ function Contact() {
           </p>
         </div>
         <div className="check-box-btn-container">
-          <Buttonwithouticon className="check-box-btn" btnText={"Send"} />
+          <Buttonwithouticon className="check-box-btn sub-btn" btnText={"Send"} btnSize={true} />
         </div>
       </div>
     </div>

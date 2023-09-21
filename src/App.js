@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Usecasedata from "./usecasedata";
 import routesdata from "./routesdata";
-
+// import ScrollToTop from "react-router-scroll-top";
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -61,8 +61,6 @@ function App() {
     Aos.init({ duration: 1000, once: true });
   }, []);
 
-
-
   return (
     <div className="App">
       {/* <Navbar />  */}
@@ -94,6 +92,7 @@ function App() {
       {/* <Aboutus/>  */}
       {/* <Home /> */}
       <Router>
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<Aboutus />} />

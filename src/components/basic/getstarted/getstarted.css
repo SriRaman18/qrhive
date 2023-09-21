@@ -101,7 +101,7 @@
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
   .get-started-heading {
-    width: 405px;
+    width: 80%;
 
     font-size: 28px;
   }
