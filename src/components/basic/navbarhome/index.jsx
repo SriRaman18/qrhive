@@ -83,11 +83,9 @@ function Navbarhome() {
           </div>
 
           <div className="li" onClick={() => setShowSideNavbar(false)}>
-          <NavLink className="a-li " to="/usecases/shopping">
-
+            <a className="a-li " href="#use-cases">
               Use Cases
-              </NavLink>
-
+            </a>
           </div>
 
           <div className="li">

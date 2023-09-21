@@ -75,7 +75,7 @@ const Usecases = () => {
     setIndex(11);
   }
   return (
-    <div className="use-cases-div">
+    <div className="use-cases-div" id="use-cases">
       <div className="usecases" id="use-cases">
         <p className="usecases-heading" data-aos="fade-down">Use cases of QRhive</p>
         <div
