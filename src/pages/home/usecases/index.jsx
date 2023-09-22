@@ -68,16 +68,18 @@ const Usecases = () => {
   function tenMove() {
     setIndex(9);
   }
-  function elvenMove() {
+  function elMove() {
     setIndex(10);
   }
-  function tweleMove() {
+  function tlMove() {
     setIndex(11);
   }
   return (
     <div className="use-cases-div" id="use-cases">
       <div className="usecases" id="use-cases">
-        <p className="usecases-heading" data-aos="fade-down">Use cases of QRhive</p>
+        <p className="usecases-heading" data-aos="fade-down">
+          Use cases of QRhive
+        </p>
         <div
           className="usecases-container"
           style={{ transform: transformValue }}>
@@ -85,8 +87,7 @@ const Usecases = () => {
             return (
               <div
                 key={usecase.id}
-                onClick={() => navigate(`/usecases/${usecase.path}`)}
-                >
+                onClick={() => navigate(`/usecases/${usecase.path}`)}>
                 <Usecase
                   key={usecase.id}
                   title={usecase.title}
@@ -178,14 +179,14 @@ const Usecases = () => {
             className={
               index === 10 ? "usecase-btn btn-highlight" : "usecase-btn"
             }
-            onClick={elvenMove}>
+            onClick={elMove}>
             11
           </button>
           <button
             className={
               index === 11 ? "usecase-btn btn-highlight" : "usecase-btn"
             }
-            onClick={tweleMove}>
+            onClick={tlMove}>
             12
           </button>
         </div>

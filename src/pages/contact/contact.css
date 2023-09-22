@@ -313,6 +313,15 @@
     text-align: flex-start;
     width: 95vw;
   }
+  .contact-back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    gap: 5px;
+
+  }
 }
 
 /* Media Query for 768px and above */
@@ -343,9 +352,10 @@
   .contact-back-btn {
     position: absolute;
     top: 10px;
-    left: 9%;
+    left: 10%;
     background-color: var(--primary-color);
-    border-radius: 0px;
+    border-radius: 20px;
+    gap: 5px;
 
   }
 }

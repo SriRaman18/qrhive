@@ -9,6 +9,9 @@ import Aos from "aos";
 
 import "aos/dist/aos.css";
 
+import { useLocation } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
+
 import { StoryOne } from "./assets";
 // import Navbar from "./components/basic/navbar";
 import Getstarted from "./components/basic/getstarted";
@@ -61,6 +64,12 @@ function App() {
     Aos.init({ duration: 1000, once: true });
   }, []);
 
+  // const { path } = useLocation();
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [ useLocation()];
+
   return (
     <div className="App">
       {/* <Navbar />  */}
@@ -92,13 +101,14 @@ function App() {
       {/* <Aboutus/>  */}
       {/* <Home /> */}
       <Router>
-        {/* <ScrollToTop /> */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<Aboutus />} />
-          <Route path="/contact-support" element={<Contact />} />
-          <Route path="/usecases/:path" element={<Usecasesdetails />}></Route>
-        </Routes>
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<Aboutus />} />
+            <Route path="/contact-support" element={<Contact />} />
+            <Route path="/usecases/:path" element={<Usecasesdetails />}></Route>
+          </Routes>
+        </ScrollToTop>
       </Router>
     </div>
   );

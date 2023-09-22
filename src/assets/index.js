@@ -68,6 +68,9 @@ import FeedBackOne from "./FeedBackOne.png";
 import FeedBackTwo from "./FeedBackTwo.png";
 import GetStarted from "./GetStarted.png";
 
+// import FmcgIndustryUc from "./FmcgIndustryUc.png";
+
+// import HealthcareUc from "./HealthcareUc.png";
 
 export {
   GetStarted,

@@ -39,7 +39,7 @@
   overflow: hidden;
 }
 .usecases-btn {
-  width: 536px;
+  width: 530px;
   box-shadow: 0px 6px 16px 0px rgba(205, 205, 205, 0.2);
 }
 .usecase-btn {
@@ -83,6 +83,6 @@
     font-size: 28px;
   }
   .usecases-btn {
-    width: 270px;
+    width: 265px;
   }
 }

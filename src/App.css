@@ -5,9 +5,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 .App {
   overflow-x: hidden;
 }

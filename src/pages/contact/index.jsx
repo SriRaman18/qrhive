@@ -4,6 +4,7 @@ import { Phone } from "../../assets";
 import Buttonwithouticon from "../../components/basic/buttonwithouticon";
 import { FaAngleLeft } from "react-icons/fa6";
 import Home from "../home";
+import { FiArrowLeft } from "react-icons/fi";
 import { useNavigate } from "react-router";
 
 function Contact() {
@@ -13,7 +14,7 @@ function Contact() {
     <div className="contact">
       <div className="contact-pic-container">
         <button onClick={() => navigate("/")} className="contact-back-btn">
-          <FaAngleLeft />
+          <FiArrowLeft />
           <p>Back</p>
         </button>
         <img src={Phone} className="contact-pic" alt="" />
@@ -28,33 +29,33 @@ function Contact() {
         </div>
         <div className="contact-form-inputs">
           {/* <div className="contact-form-inputs-first-div"> */}
-            <div className="input-container">
-              <label htmlFor="first-name" className="input-label">
-                First Name*
-              </label>
-              <input type="text" id="first-name" />
-            </div>
-            <div className="input-container">
-              <label htmlFor="last-name" className="input-label">
-                Last Name*
-              </label>
-              <input type="text" id="last-name" />
-            </div>
+          <div className="input-container">
+            <label htmlFor="first-name" className="input-label">
+              First Name*
+            </label>
+            <input type="text" id="first-name" />
+          </div>
+          <div className="input-container">
+            <label htmlFor="last-name" className="input-label">
+              Last Name*
+            </label>
+            <input type="text" id="last-name" />
+          </div>
           {/* </div> */}
           {/* <div className="contact-form-inputs-second-div"> */}
-            <div className="input-container">
-              <label htmlFor="email" className="input-label">
-                {" "}
-                Email*
-              </label>
-              <input type="email" id="email" />
-            </div>
-            <div className="input-container">
-              <label htmlFor="organisation-name" className="input-label">
-                Organisation Name*
-              </label>
-              <input type="text" id="organisation-name" />
-            </div>
+          <div className="input-container">
+            <label htmlFor="email" className="input-label">
+              {" "}
+              Email*
+            </label>
+            <input type="email" id="email" />
+          </div>
+          <div className="input-container">
+            <label htmlFor="organisation-name" className="input-label">
+              Organisation Name*
+            </label>
+            <input type="text" id="organisation-name" />
+          </div>
           {/* </div> */}
           <div className="input-container input-container-full">
             <input
@@ -79,9 +80,13 @@ function Contact() {
           </div>
           <div className="check-box-container">
             <label class="check-box-label">
-              <input type="checkbox" name="checkbox" className="check-box check-box-label-input"  />I
-              would like to receive details about products, services and events
-              from QRhive.
+              <input
+                type="checkbox"
+                name="checkbox"
+                className="check-box check-box-label-input"
+              />
+              I would like to receive details about products, services and
+              events from QRhive.
             </label>
           </div>
         </div>
@@ -92,8 +97,13 @@ function Contact() {
             <a href=""> QRhive Privacy Notice.</a>
           </p>
         </div>
-        <div className="check-box-btn-container">
-          <Buttonwithouticon className="check-box-btn sub-btn" btnText={"Send"} btnSize={true} />
+        <div className="check-box-btn-container" >
+          <Buttonwithouticon
+            className="check-box-btn sub-btn"
+            btnText={"Send"}
+            btnSize={true}
+            // onClick= {submit}
+          />
         </div>
       </div>
     </div>
