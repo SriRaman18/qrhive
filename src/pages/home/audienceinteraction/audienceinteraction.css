@@ -6,7 +6,6 @@
 .audienceinteraction {
   width: 100vw;
   font-family: sans-serif;
-  /* padding: 0px 5vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +26,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; /* 125% */
+  line-height: 50px;
   text-align: center;
   padding: 0 2vw;
 }
@@ -36,7 +35,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 100% */
+  line-height: 18px;
 }
 .audienceinteraction-body {
   display: flex;
@@ -44,7 +43,6 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 10vw;
-  /* padding: 0 2vw; */
 }
 .audienceinteraction-body-texts {
   width: 40%;
@@ -66,7 +64,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
 }
 .audienceinteraction-icon-text-img {
   margin: 5px 12px 0 0;
@@ -85,18 +83,15 @@
   .audienceinteraction-head-heading {
     font-size: 36px;
   }
-
   .audienceinteraction-head-para {
     width: 80%;
     text-align: center;
   }
-
   .audienceinteraction-body {
     margin-top: 40px;
     flex-direction: column;
     align-items: center;
-  padding: 0 5vw;
-
+    padding: 0 5vw;
   }
   .audienceinteraction-body-texts {
     width: 100%;
@@ -107,7 +102,6 @@
     text-align: justify;
   }
   .audience-interaction-pic {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +119,7 @@
 @media (max-width: 768px) {
   .audienceinteraction-head-heading {
     font-size: 32px;
-    line-height: 40px; /* 125% */
+    line-height: 40px; 
   }
 }
 
@@ -138,7 +132,6 @@
   .audienceinteraction-head-heading {
     font-size: 28px;
   }
-
   .audienceinteraction-body-texts {
     width: 100%;
   }

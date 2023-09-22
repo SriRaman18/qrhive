@@ -56,7 +56,6 @@
 
 .company-names-div {
   display: flex;
-  /* width: 100%; */
   align-items: center;
   justify-content: center;
 }
@@ -81,23 +80,7 @@
 
 /* Media query for screens between 992px and 1199px (992px <= width < 1200px) */
 @media (max-width: 1200px) {
-  /* .company-names {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background: linear-gradient(
-      90deg,
-      #fff 36.37%,
-      rgba(255, 255, 255, 0) 115.65%
-    );
-  } */
-  .company-names div {
-    /* width: 100px; */
-  }
-  /* .soorya-hospital img{
-    width: 0px;
 
-  } */
 }
 
 /* Media query for screens between 768px and 991px (768px <= width < 992px) */
@@ -116,7 +99,5 @@
     align-items: center;
     margin: 0 40px;
   }
-  .company-names div img {
-    /* width: 100px; */
-  }
+ 
 }

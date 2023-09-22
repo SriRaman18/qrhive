@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import usecasedata from "../../../usecasedata";
 import Usecase from "../../../components/basic/usecase";
 import "./usecases.css";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useParams } from "react-router-dom";
 
 const Usecases = () => {
   const [index, setIndex] = useState(0);
@@ -14,29 +12,6 @@ const Usecases = () => {
   const transformValue = `translateX(${
     -index * (screenWidth > 576 ? 600 : 305)
   }px)`;
-  // const transformValue = `translateX(${-index * 600}px)`;
-  // const getTransformValue = () => {
-  //   if (window.innerWidth >= 576) {
-  //     return `translateX(${-index * 600}px)`;
-  //   } else {
-  //     return `translateX(${-index * 350}px)`;
-  //   }
-  // };
-
-  // const [transformValue, setTransformValue] = useState(getTransformValue);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setTransformValue(getTransformValue());
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, [index]);
-
   function oneMove() {
     setIndex(0);
   }
@@ -55,7 +30,7 @@ const Usecases = () => {
   function sixMove() {
     setIndex(5);
   }
-  // -------------------------
+
   function sevenMove() {
     setIndex(6);
   }
@@ -76,7 +51,7 @@ const Usecases = () => {
   }
   return (
     <div className="use-cases-div" id="use-cases">
-      <div className="usecases" id="use-cases">
+      <div className="usecases">
         <p className="usecases-heading" data-aos="fade-down">
           Use cases of QRhive
         </p>
@@ -103,7 +78,6 @@ const Usecases = () => {
             );
           })}
         </div>
-        {/* console.log(path); */}
         <div className="usecases-btn" data-aos="fade-down">
           <button
             className={

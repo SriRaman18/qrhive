@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import "./ourclientsspeak.css";
 import Clientsfeedback from "../../../components/basic/clientsfeedback";
 import Ourclientsspeakdata from "../../../ourclientsspeakdata";
-// import { BiSolidQuoteAltLeft } from "react-icons/bi";
+
 
 function Ourclientsspeak() {
   const [index, setIndex] = useState(0);
-  // const transformValue = `translateX(${-index * 620}px)`;
   let transformValue;
   const screenWidth = window.innerWidth;
   transformValue = `translateX(${-index * (screenWidth > 1200 ? 620 : 470)}px)`;
@@ -14,23 +13,6 @@ function Ourclientsspeak() {
   if (screenWidth < 578) {
     transformValue = `translateX(${-index *385}px)`;
   }
-  // let transformValue;
-  // const calculateTransformValue = () => {
-  //   if (screenWidth > 1200) {
-  //     transformValue = `translateX(${-index * 620}px)`;
-  //   } else if (screenWidth > 992) {
-  //     transformValue = `translateX(${-index * 470}px)`;
-  //   } else if (screenWidth > 768) {
-  //     transformValue = `translateX(${-index * 470}px)`;
-  //   } else {
-  //     transformValue = `translateX(${-index * 470}px)`;
-  //   }
-  // };
-
-  // const [transformValue, setTransformValue] = useState(
-  //   calculateTransformValue()
-  // );
-
   function oneMove() {
     setIndex(0);
   }

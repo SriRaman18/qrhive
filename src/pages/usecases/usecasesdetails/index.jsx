@@ -9,16 +9,12 @@ import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 function Usecasesdetails() {
   const { path } = useParams();
-  // console.log(path);
-  // const location = useLocation();
-  // const from = new URLSearchParams(location.search).get("from");
-  // const scrollPosition = from === "home" ? 0 : someOtherValue;
- 
+
  
   const filteredData = usecasepagesdata.find(
     (usecase) => usecase.path === path
   );
-  // console.log(filteredData);
+
   return (
     <div className="">
       <Navbar highlightButton={"usecase"} />

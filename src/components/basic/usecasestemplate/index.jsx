@@ -13,7 +13,7 @@ function Usecasestemplate({
   pic,
   icon,
 }) {
-  // console.log("headText", pic);
+
   return (
     <div className="usecases-template">
       <div className="usecases-template-head">

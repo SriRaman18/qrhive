@@ -7,12 +7,10 @@
 .about-us {
   width: 100vw;
   display: flex;
-  /* height: 90vh; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  /* padding: 10px 0 0 0; */
   margin-top: 10vh;
   padding: 4vh 5vw;
 }
@@ -26,7 +24,7 @@
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 65px; /* 130% */
+  line-height: 65px; 
 }
 .about-us-para {
   color: var(--text-color);
@@ -34,7 +32,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
   width: 585px;
 }
 .about-us-pic {
@@ -78,9 +76,7 @@
 /* Media Query for 992px and above */
 @media (max-width: 992px) {
   .about-us {
-    /* margin: 0vh 5vw; */
     padding: 0;
-    /* margin: 0 3vw; */
   }
   .about-us-heading {
     font-size: 38px;
@@ -136,14 +132,4 @@
   .about-us-pic > * {
     margin: 20px 0;
   }
-
-  /* .pic1 {
-    width: 420px;
-    height: 268px;
-  }
-
-  .pic2 {
-    width: 180px;
-    height: 268px;
-  } */
 }

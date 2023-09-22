@@ -5,8 +5,6 @@
 }
 
 .get-started {
-  /* width: 100vw; */
-  /* height: 420px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,7 +25,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 45px; /* 128.571% */
+  line-height: 45px;
 }
 .get-started-para {
   color: var(--text-color);
@@ -35,7 +33,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px; 
   width: 427px;
 }
 .get-started-svg {
@@ -79,7 +77,6 @@
 @media (max-width: 768px) {
   .get-started {
     flex-direction: column;
-    /* align-items: center; */
     gap: 40px;
   }
   .get-started-texts {
@@ -88,7 +85,6 @@
   }
   .get-started-heading {
     width: 465px;
-
     font-size: 28px;
   }
 
@@ -102,7 +98,6 @@
 @media (max-width: 576px) {
   .get-started-heading {
     width: 80%;
-
     font-size: 28px;
   }
 

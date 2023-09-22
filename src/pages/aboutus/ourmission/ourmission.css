@@ -1,5 +1,4 @@
 .our-mission {
-  /* width: 100vw; */
   display: flex;
   font-family: sans-serif;
   flex-direction: row;
@@ -7,15 +6,8 @@
   align-items: center;
   padding: 2vh 5vw;
 }
-/* .our-mission-pic {
-  width: 426.999px;
-  height: 438.672px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 .our-mission-texts {
-  /* width: 616px; */
   width: 40vw;
 }
 .our-mission-heading {
@@ -23,7 +15,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; /* 125% */
+  line-height: 50px; 
 }
 .our-mission-para {
   color: var(--text-color);
@@ -31,7 +23,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 34px; /* 188.889% */
+  line-height: 34px; 
 }
 .our-mission > * {
   margin: 15px 0;
@@ -79,7 +71,6 @@
     margin: 0;
   }
   .our-mission-texts {
-    /* width: 616px; */
     width: 80vw;
   }
   .our-mission-heading {

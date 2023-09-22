@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { Phone } from "../../assets";
 import Buttonwithouticon from "../../components/basic/buttonwithouticon";
-import { FaAngleLeft } from "react-icons/fa6";
-import Home from "../home";
 import { FiArrowLeft } from "react-icons/fi";
 import { useNavigate } from "react-router";
 
 function Contact() {
   const navigate = useNavigate();
+  // const [isClicked, setIsClicked] = useState(false);
+  // const handleInputClick = () => {
+  //   setIsClicked(true);
+  // };
+  const [clickedInput, setClickedInput] = useState(null);
+
+  const handleInputClick = (inputId) => {
+    setClickedInput(inputId);
+  };
 
   return (
     <div className="contact">
@@ -28,36 +35,69 @@ function Contact() {
           </p>
         </div>
         <div className="contact-form-inputs">
-          {/* <div className="contact-form-inputs-first-div"> */}
-          <div className="input-container">
-            <label htmlFor="first-name" className="input-label">
+          <div
+            className={`input-container ${
+              clickedInput === "first-name" ? "clicked" : ""
+            }`}
+            onClick={() => handleInputClick("first-name")}>
+            <label
+              htmlFor="first-name"
+              className={`input-label ${
+                clickedInput === "first-name" ? "clicked" : ""
+              }`}>
               First Name*
             </label>
             <input type="text" id="first-name" />
           </div>
-          <div className="input-container">
-            <label htmlFor="last-name" className="input-label">
+          <div
+            className={`input-container ${
+              clickedInput === "last-name" ? "clicked" : ""
+            }`}
+            onClick={() => handleInputClick("last-name")}>
+            <label
+              htmlFor="last-name"
+              className={`input-label ${
+                clickedInput === "last-name" ? "clicked" : ""
+              }`}>
               Last Name*
             </label>
             <input type="text" id="last-name" />
           </div>
-          {/* </div> */}
-          {/* <div className="contact-form-inputs-second-div"> */}
-          <div className="input-container">
-            <label htmlFor="email" className="input-label">
-              {" "}
+
+          <div
+            className={`input-container ${
+              clickedInput === "email" ? "clicked" : ""
+            }`}
+            onClick={() => handleInputClick("email")}>
+            <label
+              htmlFor="email"
+              className={`input-label ${
+                clickedInput === "email" ? "clicked" : ""
+              }`}>
               Email*
             </label>
             <input type="email" id="email" />
           </div>
-          <div className="input-container">
-            <label htmlFor="organisation-name" className="input-label">
+          <div
+            className={`input-container ${
+              clickedInput === "organisation-name" ? "clicked" : ""
+            }`}
+            onClick={() => handleInputClick("organisation-name")}>
+            <label
+              htmlFor="organisation-name"
+              className={`input-label ${
+                clickedInput === "organisation-name" ? "clicked" : ""
+              }`}>
               Organisation Name*
             </label>
             <input type="text" id="organisation-name" />
           </div>
-          {/* </div> */}
-          <div className="input-container input-container-full">
+
+          <div
+            className={`input-container input-container-full ${
+              clickedInput === "input-container" ? "clicked" : ""
+            }`}
+            onClick={() => handleInputClick("input-container")}>
             <input
               type="text"
               id="input-container"
@@ -97,7 +137,7 @@ function Contact() {
             <a href=""> QRhive Privacy Notice.</a>
           </p>
         </div>
-        <div className="check-box-btn-container" >
+        <div className="check-box-btn-container">
           <Buttonwithouticon
             className="check-box-btn sub-btn"
             btnText={"Send"}

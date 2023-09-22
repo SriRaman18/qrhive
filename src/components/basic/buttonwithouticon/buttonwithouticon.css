@@ -9,16 +9,16 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 133.333% */
+  line-height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sub-btn{
+
+.sub-btn {
   width: 145px;
   height: 52px;
-  flex-shrink: 0;
- 
-
   font-size: 22px;
+  display: flex;
+
 }

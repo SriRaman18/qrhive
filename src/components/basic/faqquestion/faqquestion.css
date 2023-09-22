@@ -21,7 +21,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* text-align: center; */
   padding: 0px 20px;
 }
 .question-title {
@@ -29,7 +28,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px; /* 127.273% */
+  line-height: 28px;
 }
 .question-ans-text {
   width: 750px;
@@ -37,16 +36,20 @@
   justify-content: center;
   align-items: center;
   padding: 8px 20px;
-  /* text-align:; */
   color: var(--text-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
+  transition: height 0.5s ease;
 }
 .faq-icon {
   width: 50.662px;
   height: 50.662px;
+  cursor: pointer;
+}
+.faq-answer{
+  transition: all 3s ease;
 }
 /* Media Query for 1200px and above */
 

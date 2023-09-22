@@ -54,35 +54,3 @@ function Companynames() {
 }
 
 export default Companynames;
-
-// <Swiper
-// className="mySwiper"
-// spaceBetween={100}
-// slidesPerView={4}
-// loop={true}
-// autoplay={{
-//   delay: 30,
-// }}>
-// <SwiperSlide>
-//   <img src={JbHospital} alt="JbHospital" />
-// </SwiperSlide>
-// <SwiperSlide>
-
-//   <img src={SooryaHospital} alt="SooryaHospital" />
-// </SwiperSlide>
-// <SwiperSlide>
-//   <img src={PowerIndustries} alt="PowerIndustries" />
-// </SwiperSlide>
-// <SwiperSlide>
-
-//   <img src={JmHospital} alt="JmHospital" />
-
-// </SwiperSlide>
-// <SwiperSlide>
-//   <img src={MvrMedicalCenter} alt="MvrMedicalCenter" />
-// </SwiperSlide>
-// </Swiper>
-
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination, Autoplay } from "swiper/modules";
-// import "swiper/css";

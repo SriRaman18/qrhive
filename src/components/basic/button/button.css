@@ -1,12 +1,10 @@
 .button {
   background-color: var(--primary-color);
   font-family: sans-serif;
-  /* padding: 25px; */
   border: 1px solid;
   border-color: transparent;
   border-radius: 50px;
   height: 58px;
-  /* width: 120px; */
   min-width: 161px;
   max-width: 190px;
   display: flex;
@@ -15,17 +13,16 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  cursor: pointer;
 }
-.right-circle{
+.right-circle {
   width: 20px;
   height: 20px;
-  /* color: white; */
 }
 
-.home-btn{
+.home-btn {
   background-color: var(--primary-color);
   font-family: sans-serif;
- 
   border: 1px solid;
   border-color: transparent;
   border-radius: 50px;
@@ -37,7 +34,9 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  cursor: pointer;
+
 }
-@media (max-width: 576px) {
- 
+@media (max-width: 1200px) {
+
 }

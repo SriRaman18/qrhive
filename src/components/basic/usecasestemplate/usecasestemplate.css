@@ -7,7 +7,6 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   font-family: sans-serif;
   margin-top: 13vh;
 }
@@ -16,14 +15,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin-top: 140px; */
 }
 .usecases-template-head > * {
   margin: 8px 0;
 }
-/* .usecases-template > * {
-      margin: 25px 0;
-    } */
+
 .usecases-template-head-heading {
   color: var(--heading-color);
   text-align: center;
@@ -31,7 +27,7 @@
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 65px; /* 130% */
+  line-height: 65px; 
 }
 .usecases-template-text {
   color: var(--text-color);
@@ -40,13 +36,12 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px; 
 }
 .usecases-template-body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* padding: 0 10vw; */
   margin: 60px 0;
 }
 .usecases-template-body-texts {
@@ -68,7 +63,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 30px; 
 }
 .usecases-template-icon-text-img {
   margin: 5px 12px 0 0;
@@ -79,7 +74,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px; /* 127.273% */
+  line-height: 28px; 
   padding-bottom: 10px;
 }
 
@@ -101,9 +96,7 @@
     height: 370px;
   }
   .usecases-template-icon-text {
-    /* width: 507px; */
-    width: 90vw;
-
+    width: 40vw;
     font-size: 18px;
   }
 }
@@ -124,12 +117,16 @@
     font-size: 18px;
   }
   .usecases-template-body-texts {
-    /* width: 90vw; */
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 0;
   }
+  .usecases-template-icon-text {
+    width: 90vw;
+    font-size: 18px;
+  }
+
   .usecases-template-body svg {
     justify-content: center;
     align-items: center;
@@ -138,12 +135,10 @@
   }
   .usecases-template-para-title {
     width: 507px;
-
     font-size: 20px;
   }
   .usecases-template-para-text {
     font-size: 18px;
-    /* width: 500px; */
   }
 }
 
@@ -180,7 +175,6 @@
 
   .usecases-template-para-title {
     width: 307px;
-
     font-size: 20px;
   }
   .usecases-template-para-text {
@@ -205,6 +199,10 @@
   .usecases-template-head {
     width: 90%;
   }
+  .usecases-template-icon-text {
+    width: 90vw;
+  
+  }
 
   .usecases-template-head-heading {
     font-size: 35px;
@@ -212,20 +210,18 @@
     line-height: 30px;
   }
   .usecases-template-text {
-    /* width: 375px; */
     font-size: 18px;
     width: 100%;
   }
 
-  .usecases-template-para-title {
+  /* .usecases-template-para-title {
     width: 307px;
-
     font-size: 20px;
   }
   .usecases-template-para-text {
     font-size: 18px;
     width: 500px;
-  }
+  } */
 }
 
 /* Media Query for 576px and above (mobile) */

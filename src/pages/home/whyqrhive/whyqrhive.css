@@ -11,7 +11,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 60px 40px;
-  /* padding: 0 100px; */
 }
 
 .why-qrhive-heading {
@@ -20,7 +19,7 @@
   font-size: 42px;
   font-style: normal;
   font-weight: 700;
-  line-height: 61px; /* 145.238% */
+  line-height: 61px; 
 }
 .why-qrhive-text {
   color: var(--text-color);
@@ -29,7 +28,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 34px; /* 188.889% */
+  line-height: 34px;
 }
 .why-qrhive-texts > * {
   margin: 20px 0;
@@ -112,7 +111,5 @@
   .why-qrhive-text {
     width: 100%;
   }
-  /* .why-qrhive-text {
-    font-size: 14px;
-  } */
+
 }

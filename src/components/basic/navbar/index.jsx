@@ -4,7 +4,6 @@ import Buttonwithouticon from "../buttonwithouticon";
 import { MdClose } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from "react-router";
-// import Whyqrhive from "../../../pages/home/whyqrhive";
 import { NavLink } from "react-router-dom";
 
 import "./navbar.css";
@@ -50,7 +49,7 @@ function Navbar({ highlightButton }) {
           </div>
           <div className="li">
             <NavLink className="a-li" to="/contact-support">
-              Contact&Support
+              Contact & Support
             </NavLink>
           </div>
           <div className="li">
@@ -71,25 +70,3 @@ function Navbar({ highlightButton }) {
 
 export default Navbar;
 
-{
-  /* <div className="navbar">
-<div className="logo">
-  <img src={Logo} alt="logo" />
-</div>
-
-<ul className="nav-list">
-  <li>
-    <Buttonwithouticon btnText={"Why Us"} />
-  </li>
-  <li>
-    <a href="#">Use cases</a>
-  </li>
-  <li>
-    <a href="#">Contact&Support</a>
-  </li>
-  <li>
-    <a href="#">About Us</a>
-  </li>
-</ul>
-</div> */
-}

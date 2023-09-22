@@ -10,12 +10,10 @@ function Customization() {
   return (
     <div className="customization">
       <div className="customization-texts">
-      {/* <Link to={"usecases/shopping"}> */}
-
         <h2 className="customization-heading" data-aos="fade-down">
           QR Code Customization
         </h2>
-        {/* </Link> */}
+
         <p className="customization-para-text" data-aos="fade-down">
           Create custom QR Codes for every occasion, personalized with your logo
           and brand colours. Use them on various platforms to effortlessly

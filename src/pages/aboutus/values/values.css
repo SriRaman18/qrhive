@@ -1,17 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap");
 
 .values {
-  /* width: 100vw; */
   height: auto;
   overflow-x: hidden;
-  /* border-right: 2px solid #000000; */
 }
 .values-texts {
   display: flex;
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  /* gap: 31px; */
 }
 .values-title {
   color: var(--primary-color);
@@ -35,7 +32,7 @@
   font-style: normal;
   font-weight: 700;
   padding-top: 15px;
-  line-height: 55px; /* 55px */
+  line-height: 55px; 
 }
 .values-boxes {
   width: 100vw;
@@ -44,7 +41,6 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  /* margin: 0 30px ; */
 }
 /* Media Query for 1200px and above */
 @media (max-width: 1200px) {
@@ -61,17 +57,14 @@
   }
   .values-text {
     font-size: 24px;
-    line-height: 35px; /* 55px */
+    line-height: 35px; 
   }
 }
 
 /* Media Query for 576px and above (mobile) */
 @media (max-width: 576px) {
   .values-title {
- 
-  
   font-size: 24px;
- 
   width: 174px;
   padding: 3px 0;
 

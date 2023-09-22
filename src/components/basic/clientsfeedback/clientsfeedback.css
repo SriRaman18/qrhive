@@ -1,5 +1,4 @@
 .clients-feedback {
-  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +35,6 @@
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-  /* width: 80%; */
 }
 .clients-feedback-para {
   color: var(--text-color);
@@ -50,7 +48,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* text-align: center; */
   width: 540px;
   height: 84px;
   align-content: center;
@@ -74,8 +71,6 @@
 
   width: 50px;
   height: 50px;
-    /* justify-content: center;
-  align-items: center; */
 }
 /* .clients-feedback-texts::before {
   content: "";
@@ -107,19 +102,11 @@
   .clients-feedback-para {
     font-size: 16px;
   }
-  .client-info {
-  }
   .client-info-name {
     font-size: 14px;
-
   }
   .client-info-domain {
     font-size: 12px;
-
-  }
-  .client-info-pic{
-    /* width: 50px; */
-    
   }
 }
 
@@ -136,18 +123,14 @@
   .clients-feedback {
     width: 360px;
     height: 400px;
-
-    /* height: 300px; */
     padding: 2px;
     margin-right: 10px;
-  justify-content: flex-start;
-
+    justify-content: flex-start;
   }
   .clients-feedback-texts {
     width: 350px;
     height: 250px;
-  margin: 10px 0;
-
+    margin: 10px 0;
   }
   .clients-feedback-heading {
     font-size: 18px;
@@ -155,17 +138,14 @@
   .clients-feedback-para {
     font-size: 14px;
   }
-  .client-info {
-  }
+
   .client-info-name {
     font-size: 13px;
-
   }
   .client-info-domain {
     font-size: 11px;
-
   }
-  .client-info-pic{
+  .client-info-pic {
     width: 50px;
     height: 50px;
   }

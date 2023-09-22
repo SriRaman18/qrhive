@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow: hidden;
 }
 .usecases {
@@ -19,8 +18,6 @@
   width: 1800px;
   height: auto;
   display: flex;
-
-  /* align-items: flex-start; */
   overflow: hidden;
 }
 .usecases-heading {
@@ -28,7 +25,7 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px; /* 125% */
+  line-height: 50px; 
 }
 .usecases-container {
   display: flex;
@@ -50,12 +47,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  /* border: 0.5px solid rgba(128, 128, 128, 0.132); */
+ 
 }
-.usecase-btn {
-  /* gap: -10px; */
-}
-
 .usecase-btn.btn-highlight {
   background-color: var(--primary-color);
 }
