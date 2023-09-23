@@ -2,6 +2,8 @@ import React from "react";
 import { LogoTwo, Facebook, Instagram, Twitter } from "../../../assets";
 import "./footer.css";
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="footer">
       <div className="footer-body">
@@ -73,8 +75,10 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="footer-copy-rights" >
-        <p>Copyright © 2023 QRhive Website | All Rights Reserved </p>
+      <div className="footer-copy-rights">
+        <p id="copyright-text">
+          Copyright © {currentYear} QRhive Website | All Rights Reserved{" "}
+        </p>
       </div>
     </div>
   );

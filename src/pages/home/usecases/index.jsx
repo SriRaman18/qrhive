@@ -4,6 +4,10 @@ import Usecase from "../../../components/basic/usecase";
 import "./usecases.css";
 import { useNavigate } from "react-router-dom";
 
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 const Usecases = () => {
   const [index, setIndex] = useState(0);
 
@@ -49,6 +53,24 @@ const Usecases = () => {
   function tlMove() {
     setIndex(11);
   }
+
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Number of cards to show
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 576, // Adjust this breakpoint as needed
+        settings: {
+          slidesToShow: 1, // Number of cards to show on smaller screens
+        },
+      },
+    ],
+  };
+  
+  
   return (
     <div className="use-cases-div" id="use-cases">
       <div className="usecases">
@@ -58,6 +80,8 @@ const Usecases = () => {
         <div
           className="usecases-container"
           style={{ transform: transformValue }}>
+
+            
           {usecasedata.map((usecase) => {
             return (
               <div
@@ -170,3 +194,6 @@ const Usecases = () => {
 };
 
 export default Usecases;
+
+
+
