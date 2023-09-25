@@ -65,7 +65,7 @@
   .track-qrcodes {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    /* height: 80vh; */
   }
   .track-qrcodes-pic {
     width: 595px;

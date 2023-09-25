@@ -7,6 +7,8 @@ import Footer from "../../../components/basic/footer";
 import Navbar from "../../../components/basic/navbar";
 import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import Usecasesnavbar from "../../../components/basic/usecasesnavbar";
+
 function Usecasesdetails() {
   const { path } = useParams();
 
